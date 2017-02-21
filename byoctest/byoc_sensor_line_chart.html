@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width"/>
+
+<head>
+	
+	<!--
+		import CSS
+	-->
+	<link rel="stylesheet" type="text/css" href="chart_style.css">
+	<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+	
+	<!--
+		import js
+	-->
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script language="JavaScript" src="d3_sensor_line_chart.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src='jquery.datetimepicker.full.js'></script>
+	
+</head>
+
+
+<body>
+
+	<script>
+		
+		function get_sensor_data(url ,callback, sensor_type , my_start_time) {
+		
+			d3.xhr(url)
+			.header("Content-Type", "application/json")
+			.header("X-aop-credential", "AAEAAAAAAAHHyQAAAAgxMDE1MTk2NgAAAAZ+QSvtAAAAEGFiZWluZ2x1Mmw2bW90M3cABgALAAAGmAAAAAAAAABkgHRLJPTDefQAAAAcU2orNm42d0JodXhCSjNGLzM0M21Eb0Z2SzZRPQAAABw0cnpNQjJxMkR2blpOR3ZvQW1MVGxHL2R4V3c9AAAAHGVFaTh4RkpUWFNvUWttZHgvQWpiTEVwdUZhST0=")
+			.get(function(error, data) {
+				// callback
+				
+				(callback && typeof(callback) === "function") && callback(data.responseText, sensor_type, my_start_time);
+				
+			} );
+
+		}
+		
+		
+		function parse_json_be_useful(input ,sensor_type, my_start_time) {
+			
+			var useful_data_format = [];
+		
+			input = JSON.parse(input);
+		
+			for (i = 0 ; i<input["tsData"][sensor_type].length; i++ ) {
+				
+					useful_data_format.push(
+						{x:input["tsData"][sensor_type][i][0] + my_start_time ,
+						 y:input["tsData"][sensor_type][i][1]}
+				);
+			}
+			
+			var chart_name;
+			
+			switch (sensor_type) {
+				case "tempF":
+					chart_name = "Temperature";
+					break;
+				case "presF":
+					chart_name = "Pressure"
+					break;
+				case "humiF":
+					chart_name = "Humidity"
+					break;
+				default:
+					chart_name = "nuknow sensor type"
+			}
+			
+			var def_width;
+			var def_height;
+			
+			if (innerWidth < 320) {
+				def_width =270 ;
+				def_height = def_width/3;
+			} else if (innerWidth < 480) {
+				def_width = 400;
+				def_height = def_width/3;
+			} else if (innerWidth < 768) {
+				def_width = 700;
+				def_height = def_width/3;
+			} else if (innerWidth < 960) {
+				def_width = 800;
+				def_height = def_width/3;
+			} else {
+				def_width = 1200;
+				def_height = def_width/3;
+			}
+			
+			draw_line_chart(useful_data_format, chart_name, def_width, def_height);
+			
+			
+		}
+		
+	function connect_BYOC_server() {
+	
+		d3.selectAll('svg').remove();
+	
+		var my_datetime = new Date($('#datetimepicker').val());
+		var my_start_time = (my_datetime.getTime())/1000;
+			
+		var my_url = "";
+		my_url = "https://api.dev.aop.acer.com/cloud/v1/tsData?userId=116681&endpointId=Ameba&event=tempF&startTime=" + my_start_time + "&duration=7200&tsSessionId=AmebaSensor";
+		get_sensor_data(my_url , parse_json_be_useful, "tempF", my_start_time);
+
+		my_url = "https://api.dev.aop.acer.com/cloud/v1/tsData?userId=116681&endpointId=Ameba&event=presF&startTime=" + my_start_time + "&duration=7200&tsSessionId=AmebaSensor";
+		get_sensor_data(my_url , parse_json_be_useful, "presF", my_start_time);
+
+		my_url = "https://api.dev.aop.acer.com/cloud/v1/tsData?userId=116681&endpointId=Ameba&event=humiF&startTime=" + my_start_time + "&duration=7200&tsSessionId=AmebaSensor";
+		get_sensor_data(my_url , parse_json_be_useful, "humiF", my_start_time);
+	
+	}	
+		
+	</script>
+	
+	<div>
+		<input class='datetime-picker' id='datetimepicker' type='text' />
+		
+		<script>
+			$('#datetimepicker').val('1970/01/02 00:00');
+			$('#datetimepicker').datetimepicker();
+		</script>
+		
+	</div>
+	
+	<div>
+		<button class='btn' onclick='connect_BYOC_server()'>Get Sensor Line Chart</button>
+	</div>
+	
+	
+</body>
+

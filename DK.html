@@ -1,0 +1,1127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <title>IoT Development Kit - MtM Technology Corporation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+	<link href='http://fonts.googleapis.com/css?family=Arvo|Indie+Flower|Noto+Sans|Play|Ubuntu|Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+	<link href="css/mtm-lighting.css" rel="stylesheet">
+	<link href="css/mtm-dk.css" rel="stylesheet">
+
+	<!--
+	<script type="text/javascript">
+	$(document).on("scroll",function(){
+		if($(document).scrollTop()>100){
+			$("header").removeClass("large").addClass("small");
+		} else{
+			$("header").removeClass("small").addClass("large");
+		}
+	});
+</script> -->
+
+  </head>
+  <body>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NN3H4L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NN3H4L');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- top title
+    ================================================== -->
+
+    <div class="dk-title-div" id="title">
+			<nav class="language-select">
+
+			<ul class="language-select">
+				<li><a href="zh-tw/DK.html"><font size="-1">中文</font></li>
+			</ul>
+			</nav>
+		      <a href="index.html"><img class="navi-logo" src="images/logo-white.png"></a>
+			  <div class="row">
+			    <div class="col-md-offset-1 col-md-5 dk-title-image">
+     		      <img class="img-responsive fade-in" src="images/dk-head-stacked.png">
+				</div>
+
+
+				<div class="col-md-5">
+				  <div class="page-heading-desc">
+				  			<button style="background-color:rgba(0,0,0,0); border-style:none"><i class="fa fa-search"> Search Device </i></button>
+				    <p class="fade-in-down page-heading"> MtM IoT Development Kit </p>
+					<p class="fade-in-up"> Our IoT development kit contains a range of <em>connectivity & processing</em> boards,
+					                       <em>sensor</em> boards, and <em>accessory</em> boards.  <em>Modular</em> and <em>stackable</em> boards means you
+										   can pick the functionality you need, stack them together, and develop your product.
+										   Our kit comes with <em>ready-to-use firmware</em> for a range of sensors, so once you stack
+										   the boards together and load the firmware, you can immediately see sensor data on the phone.
+										   (and soon the cloud!)  Our boards themsevles are small enough for some, and may function as
+										   a complete DIY device by just adding a casing around the stacked boards.  If you are serious
+										   about productizing your project though, our modules are <em>mass-production-ready</em>, and are in use
+										   in various products in the market.  Our development kit is also the only kit in the market
+										   to offer <em>SiP (System-in-Package) modules</em> in the kit, which means functionalities are packed
+										   into a very small form factor.  This makes it possible to develop <em>very small</em> or portable products.</p>
+				  </div>
+    		    </div>
+			  </div>
+
+	</div>
+
+
+
+
+    <!-- Product highlight - big image background
+    ================================================== -->
+	    <div class="row" id="connectivity">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading"> Connectivity and Processing </p>
+			<button style="background-color:rgba(0,0,0,0); border-style:none"><i class="fa fa-search"> Search Device </i></button>
+	      </div>
+		</div>
+
+	<!-- ========== M901 Board ========== -->
+	<div class="row dk-entry">
+	  <div class="col-md-offset-1 col-md-3">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtConnect01</p></td></tr>
+			<tr><td>
+    		<img class="dk-image" src="images/stacked_dk_901_only.png" />
+			</td></tr>
+			<tr class=""><td align="center">
+            <p class="dk-desc conn-desc">Wifi + MCU</p><br>
+			</td></tr>
+			</table>
+	  </div>
+	  <div class="col-md-3">
+	        <img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc desc-heading">&nbsp;&nbsp;Usage</p><br>
+			<p class="dk-details">MtConnect01 contains our M901 <em>Wifi</em> + <em>MCU</em> module.  Use this to build your Wifi wireless node, or IoT gateway device.</p>
+      </div>
+	  <div class="col-md-2">
+	  	<img  class="dk-feature-icon" src="images/dk-feature-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Features</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-wifi.png">
+	    <p class="dk-feature-text">Wifi SiP </p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-mcu.png">
+	    <p class="dk-feature-text">Cortex-M3 MCU </p><br>
+
+      </div>
+	  <div class="col-md-2">
+
+ 	  	<img  class="dk-feature-icon" src="images/dk-application-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Applications</p><br>
+		<img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Wifi wireless node</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">IoT gateway</p><br>
+	  </div>
+	</div>
+		<!-- ========== M903 Board ========== -->
+
+	<div class="row dk-entry" id="MtConnect02">
+	  <div class="col-md-offset-1 col-md-3">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtConnect02</p></td></tr>
+			<tr><td>
+    		<img class="dk-image" src="images/stacked_dk_903_only.png"  />
+			</td></tr>
+			<tr class=""><td align="center">
+            <p class="dk-desc conn-desc">BLE (with mesh support)+ MCU</p><br>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-3">
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc desc-heading">&nbsp;&nbsp;Usage</p><br>
+			<p class="dk-details">MtConnect02 contains our M903 <em>BLE</em> + <em>MCU</em> module.  This module has been in use in commercial products including smart
+			                      lighting, beacon, indoor navigation, pedometer, heart rate monitor, etc.  It also supports BLE <em>mesh</em> technology,
+								  allowing device-to-device communication without the need for a gateway or a mobile phone.  Build your own mesh sensor
+								  and lighting network in your own imaginative way.</p>
+
+		</div>
+	  <div class="col-md-2">
+	  	<img  class="dk-feature-icon" src="images/dk-feature-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Features</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-ble.png">
+	    <p class="dk-feature-text">BLE SiP (<a href="M903.html">M903</a>)</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-mcu.png">
+	    <p class="dk-feature-text">16-bit RISC MCU</p><br>
+	  </div>
+	  <div class="col-md-2">
+	  	  	<img  class="dk-feature-icon" src="images/dk-application-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Applications</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">BLE wireless node</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Beacon</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Mesh lighting</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Mesh sensor network</p><br>
+	  </div>
+	</div>
+
+	<!-- ========== MtConnect03 Board ========== -->
+	<div class="row dk-entry" >
+	  <div class="col-md-offset-1 col-md-3">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtConnect03</p></td></tr>
+			<tr><td>
+    		<img class="dk-image" src="images/stacked_dk_904_only.png"/>
+			</td></tr>
+			<tr class=""><td align="center">
+            <p class="dk-desc conn-desc">BLE + MCU + Motion</p><br>
+			</td></tr>
+			</table>
+      </div>
+	  <div class="col-md-3">
+	        <img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc desc-heading">&nbsp;&nbsp;Usage</p><br>
+			<p class="dk-details">MtConnect03 is a multi-function board which contains our M904 <em>BLE</em> + <em>MCU</em> module, and also
+			                      <em>motion sensors</em> (accelerometer and gyroscope).  The M904 is a <em>tiny</em> 6.5 x 6.5mm module hosting a Cortex M0 MCU,
+                                  and has the Antenna embedded in the module package. Together with motion sensors, this board alone is enough for creating
+                                  some very interesting applications. </p>
+		</div>
+	  <div class="col-md-2">
+	  	<img  class="dk-feature-icon" src="images/dk-feature-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Features</p><br>
+	  <img class="dk-feature-icon" src="images/dk-feature-ble.png">
+	    <p class="dk-feature-text">BLE SiP (<a href="M904.html">M904</a>)</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-mcu.png">
+	    <p class="dk-feature-text">Cortex-M0 MCU </p><br>
+        <img class="dk-feature-icon"  src="images/dk-feature-accelerometer.png">
+	    <p class="dk-feature-text">Accelerometer </p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-gyro.png">
+	    <p class="dk-feature-text">Gyroscope</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-aop.png">
+	    <p class="dk-feature-text">Antenna on Package module</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-led.png">
+	    <p class="dk-feature-text">LED indicator</p><br>
+
+		</div>
+	  <div class="col-md-2">
+ 	  	<img  class="dk-feature-icon" src="images/dk-application-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Applications</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">BLE wireless node</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Pedometer</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">ECG monitor</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Motion detector</p><br>
+
+	</div>
+
+	</div>
+
+
+	<!-- ========== MtConnect04 Board ========== -->
+	<div class="row dk-entry" id="MtConnect04">
+	  <div class="col-md-offset-1 col-md-3">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtConnect04</p></td></tr>
+			<tr><td>
+    		<img class="dk-image" src="images/stacked_dk_mtconnect04_only.png"/>
+			</td></tr>
+			<tr class=""><td align="center">
+            <p class="dk-desc conn-desc">BLE + MCU</p><br>
+			</td></tr>
+			</table>
+      </div>
+	  <div class="col-md-3">
+	        <img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc desc-heading">&nbsp;&nbsp;Usage</p><br>
+			<p class="dk-details">MtConnect04 contains our M904 <em>BLE</em> + <em>MCU</em> module.  The M904 is a <em>tiny</em> 6.5 x 6.5mm module hosting a Cortex M0 MCU,
+                                  and has the Antenna embedded in the module package. The code devloped using this board will run exactly the same on both the M904 and the M904S
+								  modules, so you can still decide which version of our module you wish to use when you are ready for productization.	</p>
+		</div>
+	  <div class="col-md-2">
+	  	<img  class="dk-feature-icon" src="images/dk-feature-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Features</p><br>
+	  <img class="dk-feature-icon" src="images/dk-feature-ble.png">
+	    <p class="dk-feature-text">BLE SiP (<a href="M904.html">M904</a>)</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-mcu.png">
+	    <p class="dk-feature-text">Cortex-M0 MCU </p><br>
+        <!--<img class="dk-feature-icon"  src="images/dk-feature-accelerometer.png">
+	    <p class="dk-feature-text">Accelerometer </p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-gyro.png">
+	    <p class="dk-feature-text">Gyroscope</p><br>-->
+        <img class="dk-feature-icon" src="images/dk-feature-aop.png">
+	    <p class="dk-feature-text">Antenna on Package module</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-led.png">
+	    <p class="dk-feature-text">LED indicator</p><br>
+
+		</div>
+	  <div class="col-md-2">
+ 	  	<img  class="dk-feature-icon" src="images/dk-application-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Applications</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">BLE wireless node</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Pedometer</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">ECG monitor</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Motion detector</p><br>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- ========== MtConnect04S Board ========== -->
+
+
+	<div class="row dk-entry">
+	  <div class="col-md-offset-1 col-md-3">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtConnect04S</p></td></tr>
+			<tr><td>
+    		<img class="dk-image" src="images/stacked_dk_904s_only.png"/>
+			</td></tr>
+			<tr class=""><td align="center">
+            <p class="dk-desc conn-desc">BLE + MCU</p><br>
+			</td></tr>
+			</table>
+      </div>
+	  <div class="col-md-3">
+	        <img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc desc-heading">&nbsp;&nbsp;Usage</p><br>
+			<p class="dk-details">MtConnect04S contains our M904S <em>BLE</em> + <em>MCU</em> module.  This is a <em>tiny</em> 6.5 x 6.5mm module hosting a Cortex M0 MCU.
+			                      It has been in use in various wearable products and unique beacon-based products that are size-constrained. The code devloped using
+								  this board will run exactly the same on both the M904 and the M904S modules, so you can still decide which version of our module you wish
+                                  to use when you are ready for productization.	</p>
+		</div>
+	  <div class="col-md-2">
+	  	<img  class="dk-feature-icon" src="images/dk-feature-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Features</p><br>
+	  <img class="dk-feature-icon" src="images/dk-feature-ble.png">
+	    <p class="dk-feature-text">BLE SiP (<a href="M904.html">M904S</a>)</p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-mcu.png">
+	    <p class="dk-feature-text">Cortex-M0 MCU </p><br>
+        <!--<img class="dk-feature-icon"  src="images/dk-feature-accelerometer.png">
+	    <p class="dk-feature-text">Accelerometer </p><br>
+        <img class="dk-feature-icon" src="images/dk-feature-gyro.png">
+	    <p class="dk-feature-text">Gyroscope</p><br> -->
+        <!--<img class="dk-feature-icon" src="images/dk-feature-aop.png">
+	    <p class="dk-feature-text">Antenna on Package module</p><br>-->
+        <img class="dk-feature-icon" src="images/dk-feature-led.png">
+	    <p class="dk-feature-text">LED indicator</p><br>
+
+		</div>
+	  <div class="col-md-2">
+ 	  	<img  class="dk-feature-icon" src="images/dk-application-list-icon.png">
+        <p class="dk-desc desc-heading">&nbsp;&nbsp;Applications</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">BLE wireless node</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Pedometer</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">ECG monitor</p><br>
+        <img src="images/dk-feature-icon-s.png">
+	    <p class="dk-feature-text">Motion detector</p><br>
+	</div>
+
+	</div>
+
+
+
+
+	<!-- ========== Sensor Boards ========== -->
+	<div class="sensors" id="sensors">
+	<div class="row">
+		<div class="col-sm-12" align="center">
+		    <p class="section-heading"> Sensors </p>
+	    </div>
+	</div>
+
+	<div class="row dk-entry" style="padding:30px;">
+	  <div class="col-md-2" align="center">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtSense01</p></td></tr>
+			<tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_env_only.png"/><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">Environmental Sensors</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td>
+			<img class="dk-feature-icon" src="images/dk-feature-temp.png">
+			<p class="product-spec-text">Temperature </p><br>
+			<img class="dk-feature-icon" src="images/dk-feature-humidity.png">
+			<p class="product-spec-text">Humidity</p><br>
+			<img class="dk-feature-icon" src="images/dk-feature-airpressure.png">
+			<p class="product-spec-text">Air Pressure</p><br>
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+
+						<tr><td>
+			<p class="dk-details">Use this board to monitor your environment.  Turn on your fan automatically when your room is too hot.
+			                      Turn on your dehumidifier when the room is too humid.  Make your smart plant project to monitor the
+								  status of your plants and know when to water them. Know your altitude in sports applications.</p>
+			</td></tr>
+			</table>
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtSense02</p></td></tr>
+			<tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_gas_only.png" /><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">Gas Sensors</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td>
+			<img class="dk-feature-icon" src="images/dk-feature-airquality.png">
+			<p class="product-spec-text">Air Quality </p><br>
+			<img class="dk-feature-icon" src="images/dk-feature-alcohol.png">
+			<p class="product-spec-text">Alcohol</p><br>
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+			<tr><td>
+			<p class="dk-details">Use this board to know about the air around.  Get to know how much CO (Carbon Monoxide)
+			                      and VOC (Volatile Organic Compounds) are in the air to sense how the air quality is like.
+								  Or use this to know if your spouse has been drinking alcohol.</p>
+			</td></tr>
+			</table>
+
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtSense03</p></td></tr>
+            <tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_motion_only.png"/><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">Motion Sensors</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td >
+			<img  class="dk-feature-icon" src="images/dk-feature-accelerometer.png">
+			<p class="product-spec-text">Accelerometer </p><br>
+			<img  class="dk-feature-icon" src="images/dk-feature-gyro.png">
+			<p class="product-spec-text">Gyroscope</p><br>
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+
+						<tr><td>
+			<p class="dk-details">Use this board to sense motion of your device.  The accelerometer and gyroscope contained
+			                      on this board tells you how in 3D space your device is oriented, and also detects angular
+								  movements of your device.  Pedometer.  Fall detection.  Theft detection.  Or control your
+								  device wirelessly via certain kinds of motion.</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtSense04</p></td></tr>
+            <tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_mtsense04_only.png" /><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">Gesture Sensor</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-gesture.png">
+			<p class="product-spec-text">Gesture Sensor </p><br>
+
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+
+						<tr><td>
+			<p class="dk-details">We already have a working protype for this sensor, and it will soon be available in our development kit.
+			                      Wave your hand in one direction to turn on a device in your network, and wave in another direction
+								  to turn off.  Move your palm towards or away from the sensor to change the brightness of your lights,
+								  or to change the volume of your music.  This is no more just sci-fi movie!</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtSense05</p></td></tr>
+            <tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_mtsense05_only.png"/><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">UV Sensor</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-uv.png">
+			<p class="product-spec-text">UV Sensor </p><br>
+
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+
+						<tr><td>
+			<p class="dk-details">Wonder what kind of light you're exposed to?  Want to build a device that tells you whether you will
+								  get tan? (OK, maybe it's more about whether you are exposed to the risk of skin cancer)  This is the
+								  board you need.</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtSense06</p></td></tr>
+            <tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_mtsense06_only.png"/><br>
+			</td></tr>
+			<tr><td>
+            <p class="dk-desc sensor-desc">Health Sensor</p><br>
+			</td></tr>
+			<tr valign="top" class="dk-sensor-list"><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-hrm.png">
+			<p class="product-spec-text">Heart Rate </p><br>
+			<img  class="dk-feature-icon" src="images/dk-feature-spo2.png">
+			<p class="product-spec-text">SPO2</p><br>
+
+			</td></tr>
+			<tr><td>
+			<hr>
+			<img  class="dk-feature-icon" src="images/dk-info-icon.png">
+            <p class="dk-desc accessories-desc">&nbsp;&nbsp;Usage</p><br>
+			</td></tr>
+			<tr><td>
+			<p class="dk-details">Who doesn't care about their health?  Use this sensor to monitor
+			                      your heart rate and blood oxygen concentration level (SPO2).
+								  This tells you important information about the status of your body,
+								  and helps you take timely actions to keep your body in shape.
+								  Oh, and this is the only sensor in the market capable of measuring
+								  SPO2 on your wrist. (think wearable?)</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  </div>
+	  </div>
+
+	<!-- ========== Accessories Boards ========== -->
+	<div class="row" id="accessories">
+		<div class="col-sm-12" align="center">
+		    <p class="section-heading"> Accessories </p>
+	    </div>
+	</div>
+	<div class="row dk-entry">
+	  <div class="col-md-offset-1 col-md-2" align="center">
+	        <table>
+			<tr><td align="center"><p class="dk-name"> MtAid01</p></td></tr>
+			<tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_mtaid01_only.png"/>
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-extension.png">
+            <p class="dk-desc accessories-desc">Extension</p><br>
+			</td></tr>
+			<tr><td>
+			<p class="dk-details">Use this extention board to connect to other peripherals or third-party boards that you would
+			                      like to add to your project.  Because our boards are small, this extension board also serves as
+								  the bridge for programming your device.  But once your device is loaded with the desired code,
+								  the small boards can function on their own.</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	    <table>
+			<tr><td align="center"><p class="dk-name"> MtAid02</p></td></tr>
+			<tr height="220px"><td>
+    		<img class="dk-image" src="images/stacked_dk_battery_only.png"/>
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-coin-battery.png">
+            <p class="dk-desc accessories-desc">Coin Battery</p><br>
+			</td></tr>
+			<tr><td>
+			<p class="dk-details">Once you programmed your MtConnect board the way you like, the stacked boards can function as a standalone device with
+			                      just this coin battery board.  Because BLE is low power, you can do a lot with just a coin battery.
+								  (Like run a beacon device for a year.  Or a pedometer device for days.))</p>
+			</td></tr>
+			</table>
+
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	  	<table>
+			<tr><td align="center"><p class="dk-name"> MtAid03</p></td></tr>
+			<tr height="220px"><td>
+
+    		<img class="dk-image" src="images/stacked_dk_usb.png"/>
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-usb.png" >
+            <p class="dk-desc accessories-desc">USB Interface</p><br>
+			</td></tr>
+			<tr><td>
+						<p class="dk-details">Use this board for powering your device from USB, or for programming other USB-interface related features.</p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	  	<table>
+			<tr><td align="center"><p class="dk-name"> MtAid04</p></td></tr>
+			<tr height="220px"><td>
+
+    		<img class="dk-image" src="images/stacked_dk_led_only.png"/>
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-rgbwled.png">
+            <p class="dk-desc accessories-desc">RGB LED</p><br>
+			</td></tr>
+			<tr><td>
+						<p class="dk-details">It's always more fun when your project is more "visual".  Use this RGB LED as an indicator device,
+						                      or as a smart lighting LED device.  RGBW LED means you can have millions of colors to play with.
+											  Flash green when there's an incoming call?  Or flash pink when your loved ones arrive home?  </p>
+			</td></tr>
+			</table>
+
+	  </div>
+	  <div class="col-md-2" align="center">
+	  	  	<table>
+			<tr><td align="center"><p class="dk-name"> MtAid05</p></td></tr>
+			<tr height="220px"><td>
+
+    		<img class="dk-image" src="images/stacked_dk_mtaid05_only.png"/>
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-arduino.png">
+            <p class="dk-desc accessories-desc">Arduino Extension</p><br>
+			</td></tr>
+			<tr><td>
+						<p class="dk-details">This board allows you to do everything you can do using MtAid01, but in addition, it let's
+						                      you do Arduino programming on our MtConnect04S board. If you come from the Arduino world,
+											  or if you want to tap into the Arduino resources to kick start your project, then this board is for you!</p>
+			</td></tr>
+			</table>
+
+	  </div>
+
+	  <!--
+	  <div class="col-md-2" align="center">
+	  	  	<table>
+			<tr><td align="center"><p class="dk-name"> AAA Battery Case</p></td></tr>
+			<tr><td>
+
+    		<img class="img-responsive" src="images/aa-battery.png" width="250px" height="220px" />
+			</td></tr>
+			<tr class=""><td>
+			<img  class="dk-feature-icon" src="images/dk-feature-aabattery.png">
+            <p class="dk-desc accessories-desc">AAA Battery</p><br>
+			</td></tr>
+			<tr><td>
+						<p class="dk-details"> BLE is low power, but LED is dwarfed in comparison.  Coin battery won't last long on LED, so our
+                                               kit includes AAA battery option for powering LED applications. </p>
+			</td></tr>
+			</table>
+
+
+	  </div> -->
+	</div>
+	<!-- ========== Blog Link ========== -->
+
+	    <div class="row blog-div">
+		  <div class="col-sm-12" align="center">
+		    <a href="http://blog.mtmtech.com.tw"><button class="blog-button"> Technical Blog & Example Projects </button></a>
+	      </div>
+		</div>
+	<!-- ========== Starter Combo Kits ========== -->
+
+
+
+
+	<div class="dk-combo-div" id="combos">
+	    <div class="row">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading white"> Sensor Kits </p>
+	      </div>
+		</div>
+		<div class="container">
+		<div class="row combo-row">
+			<div class="col-md-offset-2 col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-env-sensor.png" width="250px" height="160px" />
+					<div class='caption-box'>
+						<p class='caption'>Environmental Sensors Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect04S (BLE + MCU) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense01 (Environmental) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					</tr></td>
+				</table>
+			</div>
+			<div class="col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-gas-sensor.png" width="250px" height="160px" />
+					<div class='caption-box'>
+						<p class='caption'>Gas Sensors Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect04S (BLE + MCU) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense02 (Gas) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					</tr></td>
+				</table>
+			</div>
+
+		</div>
+        <div class="row combo-row">
+			<div class=" col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-motion-sensor.png" width="250px" height="160px" />
+					<div class='caption-box'>
+						<p class='caption'>Motion Sensors Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect04S (BLE + MCU) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense03 (Motion) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					</tr></td>
+				</table>
+			</div>
+			<div class=" col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-uv-sensor.png" width="250px" height="160px" />
+					<div class='caption-box'>
+						<p class='caption'>UV Sensor Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect04S (BLE + MCU) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense05 (UV) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					</tr></td>
+				</table>
+			</div>
+			<div class=" col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-health-sensor.png" width="250px" height="160px" />
+					<div class='caption-box'>
+						<p class='caption'>Health Sensors Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect04S (BLE + MCU) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense06 (Health) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">Pre-loaded firmware</p><br>
+
+					</tr></td>
+				</table>
+			</div>
+		</div>
+	    <div class="row">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading white"> BLE Mesh Kits </p>
+	      </div>
+		</div>
+		<div class="container">
+		<div class="row combo-row">
+			<div class="col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo_1_smart_lighting.gif" width="250px" height="200px" />
+					<div class='caption-box'>
+						<p class='caption'>Smart Lighting Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect02 (BLE + MCU) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid04 (RGB LED) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">USB-SPI conversion board x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">Dupont cable set</p><br><br>
+					</tr></td>
+				</table>
+			</div>
+			<div class="col-md-4" align="center">
+				<table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo_4_smart_home.gif" width="250px" height="200px" />
+					<div class='caption-box'>
+						<p class='caption'>Smart Home Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect02 (BLE + MCU) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense01 (Environmental) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense03 (Motion) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid01 (Extension) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid04 (RGB LED) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">USB-SPI conversion board x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">Dupont cable set</p><br><br>
+					</tr></td>
+				</table>
+			</div>
+			<div class="col-md-4" align="center">
+			    <table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo-sensor-mesh.png" width="250px" height="200px" />
+					<div class='caption-box'>
+						<p class='caption'>Sensor Mesh Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect02 (BLE + MCU) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense01 (Environmental) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense02 (Gas) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtSense05 (UV) x 1</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">Pre-loaded firmware</p><br><br>
+					</tr></td>
+				</table>
+			</div>
+		</div>
+
+		</div>
+		<div class="row">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading white"> Beacon Kit </p>
+	      </div>
+		</div>
+		<div class="container">
+		    <div class="row combo-row">
+			<div class="col-sm-12" align="center">
+				<table>
+				<tr><td>
+				<div class='captioned-picture'>
+					<img src="images/combo_6_beacon_n.gif" width="250px" height="200px" />
+					<div class='caption-box'>
+						<p class='caption'>Beacon Kit</p>
+					</div>
+				</div>
+				</td></tr>
+				<tr><td>
+				    <br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtConnect02 (BLE + MCU) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">MtAid02 (Coin Battery) x 3</p><br>
+					<img  class="dk-feature-icon" src="images/dk-combo-list-check.png">
+			        <p class="dk-combo-set-item">Pre-loaded beacon firmware</p><br>
+					</tr></td>
+				</table>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+
+
+	<!-- ========== Example Projects ========== -->
+
+
+
+
+	<div class="" id="combos">
+
+	    <div class="row">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading"> Example Projects </p>
+	      </div>
+		</div>
+		<div class="container">
+		<div class="row combo-row">
+			<div class=" col-md-4">
+			    <table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2016/01/08/now-siri-knows-mtconnect03/">
+				<div class='captioned-picture'>
+					<img src="https://mtmtechblog.files.wordpress.com/2016/01/e89ea2e5b995e5bfabe785a7-2016-01-08-e4b88be58d8812-24-09.png?w=772" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>Siri with MtConnect03/04/04S</p>
+					</div>
+				</div>
+				</a>
+				</td></tr>
+
+				</table>
+			</div>
+			<div class="col-md-4">
+			    <table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2016/03/07/google-eddystone-with-mtconnect02/">
+				<div class='captioned-picture'>
+					<img src="https://mtmtechblog.files.wordpress.com/2016/03/eddystone1.jpeg?w=772" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>Eddystone Beacon with MtConnect02</p>
+					</div>
+				</div>
+
+				</table>
+			</div>
+			<div class="col-md-4">
+				<table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2016/02/26/mtconnect0304-is-ready-for-ipv6/">
+				<div class='captioned-picture'>
+					<img src="https://mtmtechblog.files.wordpress.com/2016/02/e69caae591bde5908d-001.jpeg?w=772" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>IPv6 with MtConnect03/04/04S</p>
+					</div>
+				</div>
+				</a>
+				</td></tr>
+
+				</table>
+			</div>
+		</div>
+		<div class="row combo-row">
+			<div class="col-md-4">
+				<table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2015/12/23/smart-lighting-with-mtconnect02/">
+				<div class='captioned-picture'>
+					<img src="https://mtmtechblog.files.wordpress.com/2015/12/img_5457.jpg?w=772" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>Smart Lighting with MtConnect02</p>
+					</div>
+				</div>
+				</a>
+				</td></tr>
+
+				</table>
+			</div>
+			<div class="col-md-4">
+				<table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2015/12/11/mtconnect03-pedometer-en/">
+				<div class='captioned-picture'>
+					<img src="images/dk-project-pedometer.jpg" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>Pedometer with MtConnect03/04/04S</p>
+					</div>
+				</div>
+				</a>
+				</td></tr>
+
+				</table>
+			</div>
+			<div class="col-md-4">
+				<table>
+				<tr><td>
+				<a href="http://blog.mtmtech.com.tw/2015/12/31/detect-vibration-by-mtconnect03/">
+				<div class='captioned-picture'>
+					<img src="https://mtmtechblog.files.wordpress.com/2015/11/20151123_083701_hdr.jpg?w=772" width="350px" height="270px" />
+					<div class='caption-box'>
+						<p class='caption'>Vibration Detection with MtConnect03/04/04S</p>
+					</div>
+				</div>
+				</a>
+				</table>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="request-dk" style="background-color:#fff">
+	<div class="row">
+		  <div class="col-sm-12" align="center">
+		    <p class="section-heading"> Request for Kit </p>
+	      </div>
+	</div>
+	<div class="container">
+		<div class="row combo-row">
+
+			<div class="col-sm-offset-2 col-sm-8" id="wufoo-zso5lhp13ogzps" width="100%">
+
+			<script type="text/javascript">var zso5lhp13ogzps;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'mtmtech',
+				'formHash':'zso5lhp13ogzps',
+				'autoResize':true,
+				'height':'831',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { zso5lhp13ogzps = new WufooForm();zso5lhp13ogzps.initialize(options);zso5lhp13ogzps.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
+			</div>
+		</div>
+	</div>
+	</div>
+
+    <!-- FOOTER -->
+    <footer>
+		<p><img class="logo"  src="images/logo.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&copy; <script>document.write(new Date().getFullYear())</script> MtM Technology &middot; All rights reserved		<a href="http://www.facebook.com/MtMTechnologyCorporation"><img style="margin-left:40px" width="25px" height="25px" src="images/social-fb-icon.png"/></a>
+		<a href="http://www.linkedin.com/company/mtm-technology-corporation"><img style="margin-left:10px" width="25px" height="25px" src="images/social-linkedin-icon.png"/></a>
+		<a href="http://blog.mtmtech.com.tw"><img style="margin-left:10px" width="25px" height="25px" src="images/social-wordpress-icon.png"/></a>
+		<a href="http://www.instagram.com/mtmtech"><img style="margin-left:10px" width="25px" height="25px" src="images/social-ig-icon.png"/></a></p>
+	</footer>
+
+	<script type="text/javascript">
+
+	var position = $(".white").offset().top;
+	$(document).on("scroll",function(){
+		if($(document).scrollTop()>position){
+			$("header").addClass("fulltop");
+			$("header").removeClass("transparent");
+		} else if ($(document).scrollTop()> 5) {
+		    $("header").addClass("transparent");
+			$("header").removeClass("fulltop");
+		}
+		else {
+			$("header").removeClass("fulltop");
+			$("header").removeClass("transparent");
+		}
+	});
+    </script>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+	<script>
+	  $( document ).ready( function() {
+         $('.fade-in-down, .fade-in-up, .fade-in').addClass('show');
+	  });
+	</script>
+
+
+  </body>
+</html>

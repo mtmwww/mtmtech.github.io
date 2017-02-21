@@ -1,0 +1,23 @@
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    padding-bottom: 1px;
+    margin-top: -20px;
+}
+
+.parallax-window h1, .parallax-window p {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 0px;
+}
+
+.parallax-window h1{
+  font-weight: 600;
+  font-size: 50px;
+  padding-top: 150px;
+}
+
+.parallax-window p {
+  font-size: 20px;
+}
+
