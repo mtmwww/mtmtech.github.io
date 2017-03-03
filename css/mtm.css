@@ -84,7 +84,6 @@ p.caption{
     position:absolute;
     left:36%;
     margin-top:-20px;
-    width:50%;
 }
 
 .product-description {
@@ -142,7 +141,6 @@ p.caption{
     padding:2%;
   }       
   .product-card .product-details-area {
-    padding:50px;
     left:25%;
    }      
 }
