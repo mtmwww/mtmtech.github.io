@@ -401,7 +401,9 @@
 		    }
 	    });
 
-        $("#mainNav").load("nav.html");
+        $("#mainNav").load("nav.html", function(){
+            $("#zh-button a:first").attr("href", "zh-tw/index.html");
+        });
         $("#contact").load("footer-contact.html");
         $("#myFooter").load("footer.html");
 
