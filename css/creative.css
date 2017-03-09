@@ -234,6 +234,10 @@ header .header-content .header-content-inner p {
   max-width: 400px;
   margin: 50px auto 0;
 }
+.service-box img{
+  width: 30%;
+  
+}
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
