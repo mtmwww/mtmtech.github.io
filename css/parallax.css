@@ -1,3 +1,7 @@
+.parallax-box {
+    background: transparent;
+}
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
