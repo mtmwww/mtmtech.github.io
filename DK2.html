@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MtM Technology - SiP module and IoT solution provider. We offer solutions of Smart Lighting, Indoor Navigation, Health Wearable and Smart Factory etc.">
+    <meta name="author" content="">
+
+    <link rel="icon" href="images/logo.png">
+    
+    <title>IoT Development Kit | MtM Technology Corporation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/mtm.css" rel="stylesheet">
+    <link href="css/parallax.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--
+	<script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74784914-1', 'auto');
+      ga('send', 'pageview');
+
+	</script>
+-->
+</head>
+
+<body id="page-top">
+    
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NN3H4L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NN3H4L');</script>
+    <!-- End Google Tag Manager -->
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    </nav>
+
+    <section class="no-padding" id="header-beacon">
+        <div class="parallax-header" data-parallax="scroll" data-image-src="images/dk-title.jpg">
+            <div class="container" style="margin-bottom: 100px">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1></h1>
+                        <h2>IoT Development Kits</h2>
+                        <hr class="light thin">
+                        <p> Our IoT development kit contains a range of <em>connectivity & processing</em> boards,
+                            <em>sensor</em> boards, and <em>accessory</em> boards.  <em>Modular</em> and <em>stackable</em> boards means you
+                            can pick the functionality you need, stack them together, and develop your product.
+                            Our kit comes with <em>ready-to-use firmware</em> for a range of sensors, so once you stack
+                            the boards together and load the firmware, you can immediately see sensor data on the phone.
+                            (and soon the cloud!)  Our boards themsevles are small enough for some, and may function as
+                            a complete DIY device by just adding a casing around the ,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-env kit-env-basic">Environmental Sensor Kit</h2>
+                <h2 class="kit-env kit-env-jlink hidden">Environmental Sensor Kit + J-link OB</h2>
+                <h2 class="kit-env kit-env-mbed hidden">Environmental Sensor Kit for mbed</h2>
+                <div class="col-lg-5">
+                    <img class="kit-env kit-env-basic" src="images/dk-kitenv-basic.jpeg"/>
+                    <img class="kit-env kit-env-jlink hidden" src="images/dk-kitenv-jlink.jpeg"/>
+                    <img class="kit-env kit-env-mbed hidden" src="images/dk-kitenv-mbed.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-env kit-env-basic btn-primary " onclick="kitOptionSwitch('kit-env', 'kit-env-basic');">basic</button>
+                        <button class="btn kit-env kit-env-jlink" onclick="kitOptionSwitch('kit-env', 'kit-env-jlink');">jlink</button>
+                        <button class="btn kit-env kit-env-mbed" onclick="kitOptionSwitch('kit-env', 'kit-env-mbed');">mbed</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-env kit-env-basic">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense01</li>
+                        <li>1✕ MtSense08</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <ul class="kit-env kit-env-jlink hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense01</li>
+                        <li>1✕ MtSense08</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                        <li>1✕ J-link OB</li>
+                    </ul>
+                    <ul class="kit-env kit-env-mbed hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense01</li>
+                        <li>1✕ MtSense08</li>
+                        <li>1✕ MtAid01-mbed</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-env kit-env-basic">250.00</p>
+                    <p class="price kit-env kit-env-jlink hidden">500.00</p>
+                    <p class="price kit-env kit-env-mbed hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>description</h4>
+                    <p>This is enough to get you startted with detecting temperature, humidity and atmospheric pressure. <span class="kit-env kit-env-jlink hidden">J-Link OB let you develop with Nordic SDK, e.g. Keil, nRF Studio.</span></p>
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section class="bg-snow">
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-motion kit-motion-basic">Motion Sensor Kit</h2>
+                <h2 class="kit-motion kit-motion-jlink hidden">Motion Sensor Kit + J-link OB</h2>
+                <h2 class="kit-motion kit-motion-mbed hidden">Motion Sensor Kit for mbed</h2>
+                <div class="col-lg-5">
+                    <img class="kit-motion kit-motion-basic" src="images/dk-kitmotion-basic.jpeg"/>
+                    <img class="kit-motion kit-motion-jlink hidden" src="images/dk-kitmotion-jlink.jpeg"/>
+                    <img class="kit-motion kit-motion-mbed hidden" src="images/dk-kitmotion-mbed.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-motion kit-motion-basic btn-primary " onclick="kitOptionSwitch('kit-motion', 'kit-motion-basic');">basic</button>
+                        <button class="btn kit-motion kit-motion-jlink" onclick="kitOptionSwitch('kit-motion', 'kit-motion-jlink');">jlink</button>
+                        <button class="btn kit-motion kit-motion-mbed" onclick="kitOptionSwitch('kit-motion', 'kit-motion-mbed');">mbed</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-motion kit-motion-basic">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense03</li>
+                        <li>1✕ MtSense07</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <ul class="kit-motion kit-motion-jlink hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense03</li>
+                        <li>1✕ MtSense07</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                        <li>1✕ J-link OB</li>
+                    </ul>
+                    <ul class="kit-motion kit-motion-mbed hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense03</li>
+                        <li>1✕ MtSense07</li>
+                        <li>1✕ MtAid01-mbed</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-motion kit-motion-basic">250.00</p>
+                    <p class="price kit-motion kit-motion-jlink hidden">500.00</p>
+                    <p class="price kit-motion kit-motion-mbed hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>description</h4>
+                    <p> The accelerometer and gyroscope tells how in 3D space your device is oriented, and also detects angular movements of your device. Pedometer. Fall detection. Theft detection. Control your device wirelessly via certain kinds of motion.</p> 
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-health kit-health-basic">Health Sensor Kit</h2>
+                <h2 class="kit-health kit-health-jlink hidden">Health Sensor Kit + J-link OB</h2>
+                <h2 class="kit-health kit-health-mbed hidden">Health Sensor Kit for mbed</h2>
+                <div class="col-lg-5">
+                    <img class="kit-health kit-health-basic" src="images/dk-kithealth-basic.jpeg"/>
+                    <img class="kit-health kit-health-jlink hidden" src="images/dk-kithealth-jlink.jpeg"/>
+                    <img class="kit-health kit-health-mbed hidden" src="images/dk-kithealth-mbed.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-health kit-health-basic btn-primary " onclick="kitOptionSwitch('kit-health', 'kit-health-basic');">basic</button>
+                        <button class="btn kit-health kit-health-jlink" onclick="kitOptionSwitch('kit-health', 'kit-health-jlink');">jlink</button>
+                        <button class="btn kit-health kit-health-mbed" onclick="kitOptionSwitch('kit-health', 'kit-health-mbed');">mbed</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-health kit-health-basic">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense06</li>
+                        <li>1✕ MtAid01</li>
+                    </ul>
+                    <ul class="kit-health kit-health-jlink hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense06</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ J-link OB</li>
+                    </ul>
+                    <ul class="kit-health kit-health-mbed hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense06</li>
+                        <li>1✕ MtAid01-mbed</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-health kit-health-basic">250.00</p>
+                    <p class="price kit-health kit-health-jlink hidden">500.00</p>
+                    <p class="price kit-health kit-health-mbed hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section class="bg-snow">
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-uv kit-uv-basic">UV Sensor Kit</h2>
+                <h2 class="kit-uv kit-uv-jlink hidden">UV Sensor Kit + J-link OB</h2>
+                <h2 class="kit-uv kit-uv-mbed hidden">UV Sensor Kit for mbed</h2>
+                <div class="col-lg-5">
+                    <img class="kit-uv kit-uv-basic" src="images/dk-kituv-basic.jpeg"/>
+                    <img class="kit-uv kit-uv-jlink hidden" src="images/dk-kituv-jlink.jpeg"/>
+                    <img class="kit-uv kit-uv-mbed hidden" src="images/dk-kituv-mbed.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-uv kit-uv-basic btn-primary " onclick="kitOptionSwitch('kit-uv', 'kit-uv-basic');">basic</button>
+                        <button class="btn kit-uv kit-uv-jlink" onclick="kitOptionSwitch('kit-uv', 'kit-uv-jlink');">jlink</button>
+                        <button class="btn kit-uv kit-uv-mbed" onclick="kitOptionSwitch('kit-uv', 'kit-uv-mbed');">mbed</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-uv kit-uv-basic">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense05</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <ul class="kit-uv kit-uv-jlink hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense05</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ MtAid02</li>
+                        <li>1✕ J-link OB</li>
+                    </ul>
+                    <ul class="kit-uv kit-uv-mbed hidden">
+                        <li class="mtconnect04s">1✕ MtConnect04S</li>
+                        <li>1✕ MtSense05</li>
+                        <li>1✕ MtAid01-mbed</li>
+                        <li>1✕ MtAid02</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-uv kit-uv-basic">250.00</p>
+                    <p class="price kit-uv kit-uv-jlink hidden">500.00</p>
+                    <p class="price kit-uv kit-uv-mbed hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-mtc04s kit-mtc04s-basic">MtConnect04S Kit</h2>
+                <h2 class="kit-mtc04s kit-mtc04s-jlink hidden">MtConnect04S Kit + J-link OB</h2>
+                <h2 class="kit-mtc04s kit-mtc04s-mbed hidden">MtConnect04S Kit for mbed</h2>
+                <div class="col-lg-5">
+                    <img class="kit-mtc04s kit-mtc04s-basic" src="images/dk-kitmtc04s-basic.jpeg"/>
+                    <img class="kit-mtc04s kit-mtc04s-jlink hidden" src="images/dk-kitmtc04s-jlink.jpeg"/>
+                    <img class="kit-mtc04s kit-mtc04s-mbed hidden" src="images/dk-kitmtc04s-mbed.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-mtc04s kit-mtc04s-basic btn-primary " onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-basic');">basic</button>
+                        <button class="btn kit-mtc04s kit-mtc04s-jlink" onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-jlink');">jlink</button>
+                        <button class="btn kit-mtc04s kit-mtc04s-mbed" onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-mbed');">mbed</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-mtc04s kit-mtc04s-basic">
+                        <li class="mtconnect02">3✕ MtConnect04S</li>
+                        <li>3✕ MtAid02</li>
+                        <li>1✕ MtAid01</li>
+                    </ul>
+                    <ul class="kit-mtc04s kit-mtc04s-jlink hidden">
+                        <li class="mtconnect02">3✕ MtConnect04S</li>
+                        <li>3✕ MtAid02</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ J-link OB</li>
+                    </ul>
+                    <ul class="kit-mtc04s kit-mtc04s-mbed hidden">
+                        <li class="mtconnect02">3✕ MtConnect04S</li>
+                        <li>3✕ MtAid02</li>
+                        <li>1✕ MtAid01-mbed</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-mtc04s kit-mtc04s-basic">250.00</p>
+                    <p class="price kit-mtc04s kit-mtc04s-jlink hidden">500.00</p>
+                    <p class="price kit-mtc04s kit-mtc04s-mbed hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section class="bg-snow">
+        <div class="container">
+            <div class="row">
+                <h2 class="kit-mtc02 kit-mtc02-basic">MtConnect02 Kit</h2>
+                <h2 class="kit-mtc02 kit-mtc02-x3 hidden">MtConnect02 Kit ✕ 3</h2>
+                <h2 class="kit-mtc02 kit-mtc02-x9 hidden">MtConnect02 Kit ✕ 9</h2>
+                <div class="col-lg-5">
+                    <img class="kit-mtc02 kit-mtc02-basic" src="images/dk-kitmtc02-basic.jpeg"/>
+                    <img class="kit-mtc02 kit-mtc02-x3 hidden" src="images/dk-kitmtc02-x3.jpeg"/>
+                    <img class="kit-mtc02 kit-mtc02-x9 hidden" src="images/dk-kitmtc02-x9.jpeg"/>
+                </div>
+                <div class="col-md-3">
+                    <h4>option</h4>
+                    <div class="btn-group" role="group">
+                        <button class="btn kit-mtc02 kit-mtc02-basic btn-primary " onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-basic');">basic</button>
+                        <button class="btn kit-mtc02 kit-mtc02-x3" onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-x3');">✕3</button>
+                        <button class="btn kit-mtc02 kit-mtc02-x9" onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-x9');">✕9</button>
+                    </div>
+                    <h4>includes</h4>
+                    <ul class="kit-mtc02 kit-mtc02-basic">
+                        <li class="mtconnect02">1✕ MtConnect02</li>
+                        <li>1✕ MtAid02</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ CSR USB<>SPI</li>
+                    </ul>
+                    <ul class="kit-mtc02 kit-mtc02-x3 hidden">
+                        <li class="mtconnect02">3✕ MtConnect02</li>
+                        <li>3✕ MtAid02</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ CSR USB<>SPI</li>
+                    </ul>
+                    <ul class="kit-mtc02 kit-mtc02-x9 hidden">
+                        <li class="mtconnect02">9✕ MtConnect02</li>
+                        <li>9✕ MtAid02</li>
+                        <li>1✕ MtAid01</li>
+                        <li>1✕ CSR USB<>SPI</li>
+                    </ul>
+                    <h4>price</h4>
+                    <p class="price kit-mtc02 kit-mtc02-basic">250.00</p>
+                    <p class="price kit-mtc02 kit-mtc02-x3 hidden">500.00</p>
+                    <p class="price kit-mtc02 kit-mtc02-x9 hidden">750.00</p>
+                    <p class="xs">before tax and shipping charges</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#request" class="btn btn-xl btn-primary page-scroll">Fill Request Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator" >
+
+    <section id="request">
+        <div class="container">
+            <div class="row">
+                <div id="wufoo-zso5lhp13ogzps" width="100%">
+                    <script type="text/javascript">var zso5lhp13ogzps;(function(d, t) {
+                        var s = d.createElement(t), options = {
+                        'userName':'mtmtech',
+                        'formHash':'zso5lhp13ogzps',
+                        'autoResize':true,
+                        'height':'831',
+                        'async':true,
+                        'host':'wufoo.com',
+                        'header':'show',
+                        'ssl':true};
+                        s.src = ('https:' == d.location.protocol ? 'https://' : 'https://') + 'www.wufoo.com/scripts/embed/form.js';
+                        s.onload = s.onreadystatechange = function() {
+                        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                        try { zso5lhp13ogzps = new WufooForm();zso5lhp13ogzps.initialize(options);zso5lhp13ogzps.display(); } catch (e) {}};
+                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                        })(document, 'script');</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="myFooter">
+        <!--Autofill by jQuery-->
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/pixelcog/parallax.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    
+    <script src="js/mtm-link.js"></script>
+
+    <script>
+
+	    $(document).on("scroll",function(){
+		    if($(document).scrollTop()>50){
+			    $("nav:first").addClass("navbar-moved");
+		    }
+		    else {
+			    $("nav:first").removeClass("navbar-moved");
+		    }
+	    });
+
+        $("#mainNav").load("nav.html", function(){
+            $("#zh-button a:first").attr("href", "zh-tw/index.html");
+        });
+        $("#contact").load("footer-contact.html");
+        $("#myFooter").load("footer.html");
+
+        function kitOptionSwitch(group, show) {
+            ["h2", "img", "ul", "span", "p"].forEach(function (tag, index, array) {      
+                $(tag + "." + group).addClass("hidden");
+                $(tag + "." + show).removeClass("hidden");
+            });
+            $("button."+ group).removeClass("btn-primary");
+            $("button."+ show).addClass("btn-primary");
+        }
+    </script>
+
+</body>
+
+</html>
