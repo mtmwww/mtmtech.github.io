@@ -150,8 +150,11 @@ aside {
   color: #E34141;
   margin-bottom: 0;
 }
-.price::before {
+.price-usd::before {
   content: "$"
+}
+.price-usd::after {
+  content: " USD"
 }
 @media (min-width: 768px) {
   .navbar-default {
