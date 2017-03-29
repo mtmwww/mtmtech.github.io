@@ -26,13 +26,6 @@ hr.thin {
 hr.long {
   border-width:50%;
 }
-hr.separator {
-  max-width: 100%;
-  width: 100%;
-  margin: 0;
-  border: 0;
-  border-top: 1px solid #eee;
-}
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -83,6 +76,7 @@ ul {
 }
 section {
   padding: 100px 0;
+  border-bottom: 1px solid #eee;
 }
 aside {
   padding: 50px 0;
