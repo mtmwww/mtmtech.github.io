@@ -145,10 +145,11 @@ aside {
   margin-bottom: 0;
 }
 .price-usd::before {
-  content: "$"
+  content: "$";
 }
 .price-usd::after {
-  content: " USD"
+  content: " usd";
+  font-variant: small-caps;
 }
 @media (min-width: 768px) {
   .navbar-default {
