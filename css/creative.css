@@ -277,6 +277,11 @@ header .header-content .header-content-inner p {
   width: 30%;
   
 }
+.service-box .big-number{
+  font-size: 100px; 
+  font-weight: 100; 
+  line-height: 108px;
+}
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
