@@ -17,60 +17,42 @@
          * so we can detect url with meaning here.
          */
         var path = window.location.pathname.toLowerCase();
+        var locale = "/";
+        if(path.startsWith("/zh-tw/")) {
+            path = path.substring(7);
+            locale = "/zh-tw/";
+        }
         var redirect = null;
         switch (path) {
-            case "/m101":
-            case "/m101.html":
-            case "/m101/":
+            case "m101":
+            case "m101.html":
+            case "m101/":
                 redirect = "M101.html";
                 break;
-            case "/zh-tw/m101":
-            case "/zh-tw/m101.html":
-            case "/zh-tw/m101/":
-                redirect = "/zh-tw/M101.html";
-                break;
-            case "/m903":
-            case "/m903.html":
-            case "/m903/":
+            case "m903":
+            case "m903.html":
+            case "m903/":
                 redirect = "M903.html";
                 break;
-            case "/zh-tw/m903":
-            case "/zh-tw/m903.html":
-            case "/zh-tw/m903/":
-                redirect = "/zh-tw/M903.html";
-                break;
-            case "/m904":
-            case "/m904.html":
-            case "/m904/":
-            case "/m904s":
-            case "/m904s.html":
-            case "/m904s/":
+            case "m904":
+            case "m904.html":
+            case "m904/":
+            case "m904s":
+            case "m904s.html":
+            case "m904s/":
                 redirect = "M904S.html";
                 break;
-            case "/zh-tw/m904":
-            case "/zh-tw/m904.html":
-            case "/zh-tw/m904/":
-            case "/zh-tw/m904s":
-            case "/zh-tw/m904s.html":
-            case "/zh-tw/m904s/":
-                redirect = "/zh-tw/M904S.html";
-                break;
-            case "/m905":
-            case "/m905.html":
-            case "/m905/":
+            case "m905":
+            case "m905.html":
+            case "m905/":
                 redirect = "M905.html";
-                break;
-            case "/zh-tw/m905":
-            case "/zh-tw/m905.html":
-            case "/zh-tw/m905/":
-                redirect = "/zh-tw/M905.html";
                 break;
         
             default:
                 break;
         }
         if (redirect) {
-            window.location.href = "//" + window.location.host + "/" + redirect;
+            window.location.href = "//" + window.location.host + locale + redirect;
         }
     </script>
 </head>
