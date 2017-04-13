@@ -17,11 +17,13 @@
          * so we can detect url with meaning here.
          */
         var path = window.location.pathname.toLowerCase();
-        var locale = "/";
-        if(path.startsWith("/zh-tw/")) {
-            path = path.substring(7);
-            locale = "/zh-tw/";
-        }
+        var locale = null;
+        ["/zh-tw/", "/"].forEach(function (tag, index, array) {      
+            if(path.startsWith(tag)) {
+                path = path.substring(tag.length);
+                locale = tag;
+            }
+        });
         var redirect = null;
         switch (path) {
             case "m101":
