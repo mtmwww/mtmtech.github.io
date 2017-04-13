@@ -53,8 +53,7 @@ p.xs {
   font-size: 12px;
 }
 ul {
-  list-style-position:inside;
-  padding-left: 0;
+  padding-left: 18px;
 }
 .bg-primary {
   background-color: #E34141;
