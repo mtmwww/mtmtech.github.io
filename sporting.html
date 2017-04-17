@@ -95,29 +95,34 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="hidden-lg hidden-md col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
-                        <img src="./images/sporting_app.png" style="width:100%" />
+                    <div class="hidden-lg hidden-md  col-xs-12">
+                        <img src="./images/sporting_app.png" class="center-block"  />
                     </div>
-                    <div class="col-lg-offset-1 col-lg-3  col-md-offset-1 col-md-3 col-xs-12 text-center">
-                        <div class="row">
+                    <div class="col-md-offset-1 col-md-3 text-center">
+                        <div class="row col-sm-6 col-md-12">
                             <h3 style="padding-top:50px;">Spin</h3>
                             <p class="text-muted">Recording the axis of rotation and calculate rotation and falling angle. </p>
-                            <br>
-                            <br>
-                            <br>
+                        </div>
+                        <div class="row col-sm-6 col-md-12">
                             <h3 style="padding-top:50px;">Power</h3>
                             <p class="text-muted">Through spin and speed, our algorithm calculates the relative power index of rebound.</p>
                         </div>
                     </div>
-                    <div class="hidden-sm hidden-xs col-lg-4 col-md-4  text-center">
-                        <img src="./images/sporting_app.png" style="width:80%"  />
+                    <div class="hidden-xs hidden-sm col-md-4">
+                        <img src="./images/sporting_app.png"  class="center-block" />
                     </div>
                     <div class="col-md-3 text-center">
-                        <h3 style="padding-top:50px;"> Speed</h3>
-                        <p class="text-muted">Analyzing the ball’s status and detects it's velocity and acceleration.</p>
-                        <br>
-                        <h3 style="padding-top:50px;">Trajectory</h3>
-                        <p class="text-muted">Computing the ball’s path and related power index, such as distance, height and bounce count, accurately.</p> 
+                        
+                        <div class ="row col-sm-6 col-md-12">
+                            
+                            <h3 style="padding-top:50px;">Speed</h3>
+                            <p class="text-muted">Analyzing the ball’s status and detects it's velocity and acceleration.</p>
+                        </div>
+                        <div class="row col-sm-6 col-md-12">
+                            <h3 style="padding-top:50px;">Trajectory</h3>
+                            <p class="text-muted">Computing the ball’s path and related power index, such as distance, height and bounce count, accurately.</p> 
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -130,6 +135,7 @@
                 <div class="col-lg-6 col-md-8 text-center">
                     <div class="service-box">
                         <h2 class="big-number"> 60 M </h2>
+                        <h4>RANGE</h4>
                         <p class="text-muted">The distance can be measured up to 60 meters with the average tolerance of MtM Version is lower than 5% of the actual distance. </p>
                     </div>
                     <br>
@@ -142,6 +148,7 @@
                 <div class="col-lg-6 col-md-8 text-center">
                     <div class="service-box">
                         <h2 class="big-number"> > 95% </h2>
+                        <h4>ACCURACY</h4>
                         <p class="text-muted">The average height test result of the experiment data and the actual data is 95.6% of height accuracy.</p>
                     </div>
                     <br>
@@ -159,11 +166,11 @@
         <div class="container text-center ">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="section-heading">Hardware</h1>
+                    <h1 class="section-heading">Hardware Service</h1>
                     <hr>
                 </div>
                 <div class="col-lg-12 ">  
-                    <p>We use a motion sensor with accelerometer and gyroscope in it. This sensor tells the movement-related data and provide automatic power saving mechanism. Making the ball both smart and low power consumption.</p>
+                    <p>We use a motion sensor with accelerometer and gyroscope in it. This sensor tells the movement-related data and provide automatic power saving mechanism. Making the ball both smart and low power consumption. Also, we provide the schematic references of the pcb anntena, power circuit and offer the consulting service as needed to assist your hardware design.</p>
                 </div>  
                 <div class="col-lg-12 text-center">
                     <img src="./images/sporting_hardware.png"/>
@@ -208,7 +215,7 @@
         });
         
         $("#mainNav").load("nav.html", function(){
-            $("#zh-button a:first").attr("href", "zh-tw/bike.html");
+            $("#zh-button a:first").attr("href", "zh-tw/sporting.html");
         });
         $("#contact").load("footer-contact.html");
         $("#myFooter").load("footer.html");
