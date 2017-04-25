@@ -33,7 +33,9 @@
 
 }
 
-.parallax-header h1,.parallax-header h2, .parallax-header p {
+.parallax-header h1,
+.parallax-header h2,
+.parallax-header p {
   color: rgba(255, 255, 255, 1);
   margin-top: 0px;
    margin-left:20px;
@@ -53,7 +55,6 @@
   margin-bottom: 0;
   font-size: 50px;
   padding-top: 50px;
- // padding-bottom: 50px;
 }
 .parallax-header p {
 
