@@ -1,70 +1,58 @@
-.parallax-box {
-    background: transparent;
+div[class^="parallax-"],
+div[class*=" parallax-"] {
+  color: rgba(255, 255, 255, 1);
+}
+
+div[class^="parallax-"] p,
+div[class*=" parallax-"] p {
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .parallax-window {
-    min-height: 400px;
-    background: transparent;
-    padding-bottom: 1px;
-    margin-top: -20px;
+  min-height: 400px;
+  padding-bottom: 1px;
+  margin-top: -20px;
 }
 
-.parallax-window h1, .parallax-window p {
-  color: rgba(255, 255, 255, 1);
+.parallax-window h1,
+.parallax-window p {
   text-align: center;
   margin-top: 0px;
 }
 
-.parallax-window h1{
-  font-weight: 500;
-  font-size: 37px;
+.parallax-window h1 {
+  font-weight: 200;
+  font-size: 52px;
   padding-top: 150px;
 }
 
-.parallax-window p {
-  font-size: 17px;
-}
-
 .parallax-header {
-    min-height: 400px;
-    background: transparent;
-    padding-bottom: 1px;
-    margin-top: -20px;
-
+  min-height: 400px;
+  padding-bottom: 1px;
+  margin-top: -20px;
 }
 
-.parallax-header h1,
-.parallax-header h2,
-.parallax-header p {
-  color: rgba(255, 255, 255, 1);
-  margin-top: 0px;
-   margin-left:20px;
-}
-
-.parallax-header h1{
-  font-weight: 700;
-  text-transform: uppercase;
+.parallax-header h1 {
+  font-weight: 200;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 70px;
   padding-top: 200px;
 }
-.parallax-header h2{
 
+.parallax-header h2 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 50px;
   padding-top: 50px;
 }
-.parallax-header p {
-
-  font-size: 20px;
-}
 
 .parallax-header hr {
- margin: 30px auto;
+  margin: 30px auto;
 }
+
 .parallax-header img {
- padding-top: 180px;
- width:100%;
+  padding-top: 180px;
+  width: 100%;
 }
