@@ -3,13 +3,15 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400');
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Roboto', 'Open Sans', Arial, sans-serif;
   
 }
 hr {
@@ -42,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Roboto', 'Open Sans', Arial, sans-serif;
 }
 p {
   font-size: 17px;
@@ -76,6 +78,9 @@ ul {
 section {
   padding: 100px 0;
   border-bottom: 1px solid #eee;
+}
+.no-border {
+  border-bottom: medium none color;
 }
 aside {
   padding: 50px 0;

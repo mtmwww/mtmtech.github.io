@@ -32,7 +32,7 @@ div[class*=" parallax-"] h2 {
 
 div[class^="parallax-"] p,
 div[class*=" parallax-"] p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
 }
 
