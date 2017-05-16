@@ -353,6 +353,23 @@ header .header-content .header-content-inner p {
   padding-right: 0;
   padding-left: 0;
 }
+.modal {
+    text-align: center;
+}
+
+.modal::before {
+    content: "";      
+    display: inline-block;
+    height: 100%;    
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.modal-dialog { 
+    display: inline-block;  
+    text-align: left;   
+    vertical-align: middle;
+}
 .btn-default {
   color: #222222;
   background-color: white;

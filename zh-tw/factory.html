@@ -29,32 +29,6 @@
         <link href="/css/parallax.css" rel="stylesheet">
         <link href="/css/mtmbeacon.css" rel="stylesheet">
         <link href="/css/Footer-with-social-icons.css" rel="stylesheet">
-		
-        <!-- Video Manager -->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                /* Get iframe src attribute value i.e. YouTube video url
-                and store it in a variable */
-                var url = $("#demoVideo").attr('src');
-                
-                /* Remove iframe src attribute on page load to
-                prevent autoplay in background */
-                $("#demoVideo").attr('src', '');
-                
-                /* Assign the initially stored url back to the iframe src
-                attribute when modal is displayed */
-                $("#myModal").on('shown.bs.modal', function(){
-                    $("#demoVideo").attr('src', url);
-                });
-                
-                /* Assign empty url value to the iframe src attribute when
-                modal hide, which stop the video playing */
-                $("#myModal").on('hide.bs.modal', function(){
-                    $("#demoVideo").attr('src', '');
-                });
-            });
-        </script>
-        <!-- End Video Manager -->
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -206,7 +180,7 @@
                                             <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <iframe id="demoVideo" width="560" height="315" src="https://drive.google.com/file/d/0B1REOMQRErNTM3ZGMGc5ZzdBN2c/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                            <iframe id="demoVideo" width="560" height="315" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -217,15 +191,15 @@
                             <p>檢測機櫃內的溫濕度，確保其保持在正常範圍內。</p>
                             <a href="#video-lg"data-toggle="modal">--> 觀看影片</a>
                             <!-- Modal HTML -->
-                            <div id="video-lg" class="modal fade">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
+                            <div id="video-lg" class="modal fade" style="margin: 0 auto;">
+                                <div class="modal-dialog" >
+                                    <div class="modal-content" width="1000" height="563">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                             <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <iframe id="demoVideo" width="560" height="315" src="https://drive.google.com/file/d/0B1REOMQRErNTM3ZGMGc5ZzdBN2c/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                            <iframe id="demoVideo" width="1000" height="563" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -366,15 +340,15 @@
                                 <p>檢測機櫃內的溫濕度，確保其保持在正常範圍內。</p>
                                 <a href="#video-xs"data-toggle="modal">--> 觀看影片</a>
                                 <!-- Modal HTML -->
-                                <div id="video-xs" class="modal fade">
-                                    <div class="modal-dialog">
+                                <div id="video-xs" class="modal fade" >
+                                    <div class="modal-dialog" >
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                                 <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
                                             </div>
-                                            <div class="modal-body">
-                                                <iframe id="demoVideo" width="250" height="142" src="https://drive.google.com/file/d/0B1REOMQRErNTM3ZGMGc5ZzdBN2c/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                            <div class="modal-body" >
+                                                <iframe id="demoVideo" width="250" height="142" margin: 0 auto; src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
