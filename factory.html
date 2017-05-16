@@ -29,39 +29,6 @@
         <link href="css/parallax.css" rel="stylesheet">
         <link href="css/mtmbeacon.css" rel="stylesheet">
         <link href="css/Footer-with-social-icons.css" rel="stylesheet">
-		
-        <!-- Video Manager -->
-       <script>
-            jQuery('#video-lg').on('hidden.bs.modal', function (e) {
-                jQuery('#video-lg video').attr("src", jQuery("#video-lg  video").attr("src"));
-            });
-        </script>
-       <!--  <script type="text/javascript">
-            /*   $(document).ready(function(){
-                /* Get iframe src attribute value i.e. YouTube video url
-            and store it in a variable */
-            /*      var url = $("#demoVideo").attr('src');
-                
-                /* Remove iframe src attribute on page load to
-            prevent autoplay in background */
-            /*     $("#demoVideo").attr('src', '');
-                
-                /* Assign the initially stored url back to the iframe src
-            attribute when modal is displayed */
-            /*      $("#video-lg").on('shown.bs.modal', function(){
-                $("#demoVideo").attr('src', url);
-                });
-                
-                /* Assign empty url value to the iframe src attribute when
-            modal hide, which stop the video playing */
-            /*     $("#video-lg").on('hide.bs.modal', function(){
-                $("#demoVideo").attr('src', '');
-                });
-                
-            });*/
-      </script>-->
-        
-        <!-- End Video Manager -->
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,7 +50,7 @@
             </script>
         -->
         
-       
+        
     </head>
     
     <body id="page-top">
@@ -97,8 +64,6 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NN3H4L');</script>
         <!-- End Google Tag Manager -->
-        
-        
         
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         </nav>
@@ -208,32 +173,11 @@
                             <h3 style="margin-top:20px;margin-bottom:20px;">Nitrogen cabinet</h3>
                             <p>Detect temperature and humidity inside the cabinet to make sure it is costantly.</p>
                             <a href="#video-lg"data-toggle="modal">--> Watch Video</a>
-                            <!-- Modal HTML -->
-                            <!--  <div id="video-md" class="modal fade">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                <h4 class="modal-title">MtM - Nitrogen Cabinet in Action</h4>
-                                </div>
-                                <div class="modal-body">
-                            <!--  <iframe id="demoVideo" width="560" height="315" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4?rel=0" frameborder="0" allowfullscreen></iframe>-->
-                            <!--       <video width="560" height="315" controls>
-                                <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
-                                </video>
-                                </div>
-                                </div>
-                                </div>
-                            </div>-->
                         </div>
                         <div class="hidden-md col-lg-6" style="padding:25px">
                             <h3 style="margin-top:40px;margin-bottom:40px;">Nitrogen cabinet</h3>
                             <p>Detect temperature and humidity inside the cabinet to make sure it is costantly.</p>
-                            <a href="#video-lg"data-toggle="modal">--> Watch Video</a>
-                            <!-- Modal HTML -->
-                            <!-- Modal HTML -->
-                            
-                            
+                            <a href="#video-lg"data-toggle="modal" onclick="document.getElementById('cabinet-video').play();">--> Watch Video</a>
                         </div>
                         <div class="col-md-6" style=" padding:0px">
                             <img src="./images/factory_cabinet.jpg" alt="Second slide" style="width:100%; "> 
@@ -284,11 +228,11 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('cabinet-video').pause();">×</button>
                             <h4 class="modal-title">MtM - Nitrogen Cabinet in Action</h4>
                         </div>
                         <div class="modal-body">
-                            <video width="560" height="315" controls>
+                            <video id="cabinet-video" width="560" height="315" controls >
                                 <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -332,6 +276,7 @@
                     </div>
                 </div>
             </section>
+            
             <section id="services" class="hidden-md hidden-lg">
                 <div class="container"  style="padding-left:50px;padding-right:50px  ">
                     <div class="row" style="margin-top:20px; ">
@@ -381,100 +326,98 @@
                             <div class="col-xs-12 " >
                                 <h3 style="margin-top:20px;margin-bottom:20px;">Nitrogen cabinet</h3>
                                 <p>Detect temperature and humidity inside the cabinet to make sure it is costantly.</p>
-                                <a href="#video-lg"data-toggle="modal">--> Watch Video</a>
-                                <!-- Modal HTML -->
-                                <!--     <div id="video-xs" class="modal fade">
+                                <a href="#video-xs"data-toggle="modal">--> Watch Video</a>
+                                <div id="video-xs" class="modal fade">
                                     <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title">MtM - Nitrogen Cabinet in Action</h4>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('cabinet-video').pause();">×</button>
+                                                <h4 class="modal-title">MtM - Nitrogen Cabinet in Action</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <video id="cabinet-video" width="250" height="142" controls >
+                                                    <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                <!--    <iframe id="demoVideo" width="250" height="170" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" frameborder="0" allowfullscreen></iframe>-->
-                                <!--          <video width="560" height="315" controls >
-                                    <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
-                                    </video>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>-->
-                            </div>
-                            <div class="col-xs-12" style="margin-top:20px;padding:0px">
-                                <img src="./images/factory_cabinet.jpg" alt="Second slide" style="width:100%; "> 
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
-                            
-                            <div class="col-xs-12" >
-                                <h3 style="margin-top:20px;margin-bottom:20px;">Office managers</h3>
-                                <p>Know employee movements to verify attendance.</p>
-                                </div><div class="col-xs-12"  style=" padding:0px">
-                                <img src="./images/factory_employee.jpg" alt="Second slide" style="width:100%; "> 
-                            </div>
-                        </div>
-                        <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
-                            <div class="col-xs-12 ">
-                                <h3 style="margin-top:20px;margin-bottom:20px;">Equipment</h3>
-                                <p>Monitor whether assets are located in a given area or not, in order to track machine's location.</p>
-                                </div> <div class="col-xs-12 col-md-6" style=" padding:0px">
-                                <img src="./images/factory_equipment.jpg" alt="Second slide" style="width:100%; padding:0px"> 
-                            </div>
-                        </div>
-                        <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
-                            <div class="col-xs-12 ">
-                                <h3 style="margin-top:20px;margin-bottom:20px;">Warehouse</h3>
-                                <p>Diminish transport error, optimize storage and storing processes.</p>
-                            </div> 
-                            <div class=" col-xs-12" style=" padding:0px">
-                                <img src="./images/factory_stock.jpg" alt="Second slide" style="width:100%; padding:0px"> 
-                            </div>
+                        <div class="col-xs-12" style="margin-top:20px;padding:0px">
+                            <img src="./images/factory_cabinet.jpg" alt="Second slide" style="width:100%; "> 
                         </div>
                     </div>
-                </section>
-                
-                <section id="contact" >
-                    <!--Autofill by jQuery-->
-                </section>
-                <footer id="myFooter">
-                    <!--Autofill by jQuery-->
-                </footer>
-                
-                <!-- jQuery -->
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                
-                <!-- Bootstrap Core JavaScript -->
-                <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                
-                <!-- Plugin JavaScript -->
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.1.4/scrollreveal.min.js"></script>
-                <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-                <script src="vendor/pixelcog/parallax.min.js"></script>
-                
-                <!-- Theme JavaScript -->
-                <script src="js/creative.min.js"></script>
-                
-                <script>
-                    
-                    $(document).on("scroll",function(){
-                        if($(document).scrollTop()>50){
-                            $("nav:first").addClass("navbar-moved");
-                        }
-                        else {
-                            $("nav:first").removeClass("navbar-moved");
-                        }
-                    });
-                    
-                    $("#mainNav").load("nav.html", function(){
-                        $("#zh-button a:first").attr("href", "zh-tw/factory.html");
-                    });
-                    $("#contact").load("footer-contact.html");
-                    $("#myFooter").load("footer.html");
-                    
-                </script>
-                
-            </body>
+                    <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
+                        
+                        <div class="col-xs-12" >
+                            <h3 style="margin-top:20px;margin-bottom:20px;">Office managers</h3>
+                            <p>Know employee movements to verify attendance.</p>
+                            </div><div class="col-xs-12"  style=" padding:0px">
+                            <img src="./images/factory_employee.jpg" alt="Second slide" style="width:100%; "> 
+                        </div>
+                    </div>
+                    <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
+                        <div class="col-xs-12 ">
+                            <h3 style="margin-top:20px;margin-bottom:20px;">Equipment</h3>
+                            <p>Monitor whether assets are located in a given area or not, in order to track machine's location.</p>
+                            </div> <div class="col-xs-12 col-md-6" style=" padding:0px">
+                            <img src="./images/factory_equipment.jpg" alt="Second slide" style="width:100%; padding:0px"> 
+                        </div>
+                    </div>
+                    <div class="row" style="background-color:rgba(208,209,205,0.2);margin-bottom:40px;">
+                        <div class="col-xs-12 ">
+                            <h3 style="margin-top:20px;margin-bottom:20px;">Warehouse</h3>
+                            <p>Diminish transport error, optimize storage and storing processes.</p>
+                        </div> 
+                        <div class=" col-xs-12" style=" padding:0px">
+                            <img src="./images/factory_stock.jpg" alt="Second slide" style="width:100%; padding:0px"> 
+                        </div>
+                    </div>
+                </div>
+            </section>
             
-        </html>
+            <section id="contact" >
+                <!--Autofill by jQuery-->
+            </section>
+            <footer id="myFooter">
+                <!--Autofill by jQuery-->
+            </footer>
+            
+            <!-- jQuery -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+            <!-- Bootstrap Core JavaScript -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
+            <!-- Plugin JavaScript -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.1.4/scrollreveal.min.js"></script>
+            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <script src="vendor/pixelcog/parallax.min.js"></script>
+            
+            <!-- Theme JavaScript -->
+            <script src="js/creative.min.js"></script>
+            
+            <script>
+                
+                $(document).on("scroll",function(){
+                    if($(document).scrollTop()>50){
+                        $("nav:first").addClass("navbar-moved");
+                    }
+                    else {
+                        $("nav:first").removeClass("navbar-moved");
+                    }
+                });
+                
+                $("#mainNav").load("nav.html", function(){
+                    $("#zh-button a:first").attr("href", "zh-tw/factory.html");
+                });
+                $("#contact").load("footer-contact.html");
+                $("#myFooter").load("footer.html");
+                
+            </script>
+            
+        </body>
         
+    </html>

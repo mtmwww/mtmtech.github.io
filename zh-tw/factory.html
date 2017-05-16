@@ -170,40 +170,12 @@
                         <div class="hidden-lg col-md-6" style="padding:15px">
                             <h3 style="margin-top:20px;margin-bottom:20px;">氮氣櫃</h3>
                             <p>檢測機櫃內的溫濕度，確保其保持在正常範圍內。</p> 
-                            <a href="#video-md"data-toggle="modal">--> 觀看影片</a>
-                            <!-- Modal HTML -->
-                            <div id="video-md" class="modal fade">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                            <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <iframe id="demoVideo" width="560" height="315" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#video-lg"data-toggle="modal">--> 觀看影片</a>
                         </div>
                         <div class="hidden-md col-lg-6" style="padding:25px">
                             <h3 style="margin-top:40px;margin-bottom:40px;">氮氣櫃</h3>
                             <p>檢測機櫃內的溫濕度，確保其保持在正常範圍內。</p>
                             <a href="#video-lg"data-toggle="modal">--> 觀看影片</a>
-                            <!-- Modal HTML -->
-                            <div id="video-lg" class="modal fade" style="margin: 0 auto;">
-                                <div class="modal-dialog" >
-                                    <div class="modal-content" width="1000" height="563">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                            <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <iframe id="demoVideo" width="1000" height="563" src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-md-6" style=" padding:0px">
                             <img src="/images/factory_cabinet.jpg" alt="Second slide" style="width:100%; "> 
@@ -250,7 +222,21 @@
                     </div>
                 </div>
             </section>
-            
+            <div id="video-lg" class="modal fade" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('cabinet-video').pause();">×</button>
+                            <h4 class="modal-title">先封科技-氮氣櫃實際應用</h4>
+                        </div>
+                        <div class="modal-body">
+                            <video id="cabinet-video" width="560" height="315" controls >
+                                <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--xs and sm-->
             <section id="services" class=" bg-snow hidden-md hidden-lg">
                 <div class="container"  style="padding-left:50px;padding-right:50px ">
@@ -339,16 +325,17 @@
                                 <h3 style="margin-top:20px;margin-bottom:20px;">氮氣櫃</h3>
                                 <p>檢測機櫃內的溫濕度，確保其保持在正常範圍內。</p>
                                 <a href="#video-xs"data-toggle="modal">--> 觀看影片</a>
-                                <!-- Modal HTML -->
-                                <div id="video-xs" class="modal fade" >
-                                    <div class="modal-dialog" >
+                                <div id="video-lg" class="modal fade" style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="modal-title">先封科技-氮氣櫃實際案例</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('cabinet-video').pause();">×</button>
+                                                <h4 class="modal-title">先封科技-氮氣櫃實際應用</h4>
                                             </div>
-                                            <div class="modal-body" >
-                                                <iframe id="demoVideo" width="250" height="142" margin: 0 auto; src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4/preview?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                            <div class="modal-body">
+                                                <video id="cabinet-video" width="250" height="142" controls >
+                                                    <source src="https://mtmtechblog.files.wordpress.com/2017/03/smart-wafer-cabinet.mp4" type="video/mp4">
+                                                </video>
                                             </div>
                                         </div>
                                     </div>
