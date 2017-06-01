@@ -1,0 +1,6 @@
+.i18n-more-detail::before {
+  content: "More Details ";
+}
+.i18n-more-detail-zh::before {
+  content: "細節 ";
+}
