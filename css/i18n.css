@@ -4,3 +4,9 @@
 .i18n-more-detail-zh::before {
   content: "細節規格 ";
 }
+.i18n-goto::before {
+  content: "Go to ";
+}
+.i18n-goto-zh::before {
+  content: "前往 ";
+}
