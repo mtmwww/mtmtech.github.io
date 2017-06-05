@@ -30,3 +30,11 @@ $('.link-spec-ak09970').each(function () {
     var link = $(this).html();
     $(this).wrap('<a href="//www.akm.com/akm/en/product/detail/0059/"></a>');
 });
+$('.link-spec-lps25hb').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.st.com/en/mems-and-sensors/lps25hb.html"></a>');
+});
+$('.link-spec-hts221').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.st.com/content/st_com/en/products/mems-and-sensors/humidity-sensors/hts221.html"></a>');
+});
