@@ -38,3 +38,7 @@ $('.link-spec-hts221').each(function () {
     var link = $(this).html();
     $(this).wrap('<a href="//www.st.com/content/st_com/en/products/mems-and-sensors/humidity-sensors/hts221.html"></a>');
 });
+$('.link-spec-paj7620u2').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.pixart.com/product_data.asp?product_id=151&productclassify_id=17&productclassify2_id=43&productclassify_name=Gesture%20Recognition&productclassify2_name=Integrated%20ISP%20Single-Chip&partnumber=PAJ7620U2"></a>');
+});
