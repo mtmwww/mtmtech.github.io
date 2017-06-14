@@ -564,6 +564,14 @@
 
         $("#mainNav").load("nav.html", function(){
             $("#zh-button a:first").attr("href", "zh-tw/kit.html");
+            $("#zh-button a:first").click(function(){
+                var href = $(this).attr("href");
+                if(href.indexOf("#") > -1){
+                    href = href.substring(0, href.indexOf("#"));
+                }
+                href = href + window.location.hash;
+                $(this).attr("href", href);
+            });
         });
         $("#paypal").load("/paypal-badge.html");
         $("#contact").load("footer-contact.html");
@@ -577,6 +585,16 @@
             $("button."+ group).removeClass("btn-primary");
             $("button."+ show).addClass("btn-primary");
         }
+
+        var url = document.location.toString();
+        var activeTab = url.substring(url.indexOf("#") + 1);
+        if (url.match('#')) {
+            $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+        }
+        $('.nav-tabs a').on('shown.bs.tab', function (e) {
+            history.pushState(null, null, e.target.hash);
+            window.location.hash = e.target.hash;
+        });
     </script>
 
 </body>
