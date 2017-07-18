@@ -1,0 +1,5 @@
+# robots.txt for http://www.mtmtech.com.tw/
+
+User-Agent: *
+Disallow: /404.html
+Disallow: /M908.html
