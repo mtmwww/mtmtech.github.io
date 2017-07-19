@@ -477,6 +477,32 @@ fieldset[disabled] .btn-primary.active {
   -moz-box-shadow: 0 3px 0 #ad3030;
   box-shadow: 0 3px 0 #ad3030
 }
+.btn:focus,
+.btn:hover {
+  outline: 0;
+  top: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none
+}
+.btn.white {
+  background: #FFF;
+  box-shadow: none;
+  color: #202020;
+  text-decoration: none;
+  -webkit-box-shadow: 0 3px 0 #e0e0e0;
+  -moz-box-shadow: 0 3px 0 #e0e0e0;
+  box-shadow: 0 3px 0 #e0e0e0
+}
+.btn.white:focus,
+.btn.white:hover {
+  color: #202020;
+  top: 3px;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none
+}
 .btn-xl {
   padding: 15px 30px;
 }
