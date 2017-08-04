@@ -1,0 +1,16 @@
+.nav h1,
+.nav h2,
+.nav h3,
+.nav h4,
+.nav h5,
+.nav h6,
+.nav p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.nav h1 {
+    font-size: 16px;
+}
+.nav p {
+    font-size: 12px;
+}
