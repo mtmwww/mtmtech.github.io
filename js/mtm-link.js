@@ -1,3 +1,8 @@
+
+$('.link-mtconnect05').each(function () {
+    var link = $(this).html();
+    $(this).contents().wrap('<a href="//blog.mtmtech.com.tw/mtconnect05"></a>');
+});
 $('.link-mtconnect04s').each(function () {
     var link = $(this).html();
     $(this).contents().wrap('<a href="//blog.mtmtech.com.tw/mtconnect04s"></a>');
