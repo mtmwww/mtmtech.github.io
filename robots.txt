@@ -2,4 +2,3 @@
 
 User-Agent: *
 Disallow: /404.html
-Disallow: /M908.html
