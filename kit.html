@@ -24,12 +24,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-    <link href="css/parallax.css" rel="stylesheet">
-    <link href="css/i18n.css" rel="stylesheet">
+    <link href="/css/creative.css" rel="stylesheet">
+    <link href="/css/parallax.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -48,7 +47,7 @@
     </nav>
 
     <section class="no-padding" id="header">
-        <div class="parallax-header" data-parallax="scroll" data-image-src="images/kit-title.jpg">
+        <div class="parallax-header" data-parallax="scroll" data-image-src="/images/kit-title.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" style="text-align:left;">
@@ -66,7 +65,7 @@
 
     <div class="container">
         <ul class="nav nav-tabs nav-justified">
-            <li class="active"><a data-toggle="tab" href="#kit-env"><h4><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Env</h4></a></li>
+            <li class="active"><a data-toggle="tab" href="#kit-env"><h4><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Environmental</h4></a></li>
             <li><a data-toggle="tab" href="#kit-motion"><h4><i class="fa fa-street-view" aria-hidden="true"></i> Motion</h4></a></li>
             <li><a data-toggle="tab" href="#kit-health"><h4><i class="fa fa-heartbeat" aria-hidden="true"></i></i> Health</h4></a></li>
             <li><a data-toggle="tab" href="#kit-uv"><h4><i class="fa fa-sun-o" aria-hidden="true"></i> UV</h4></a></li>
@@ -89,49 +88,49 @@
                     <h2 class="kit-env kit-env-basic">Environmental Sensor Kit</h2>
                     <h2 class="kit-env kit-env-mbed hidden">Environmental Sensor Kit for mbed</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-env kit-env-basic" src="images/kit-env-basic.jpeg" />
-                        <img class="kit-env kit-env-mbed hidden" src="images/kit-env-mbed.jpeg" />
+                        <img class="kit-env kit-env-basic" src="/images/kit-env-basic.jpeg"/>
+                        <img class="kit-env kit-env-mbed hidden" src="/images/kit-env-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-env kit-env-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-env', 'kit-env-basic');">basic</button>
                             <button class="btn kit-env kit-env-mbed btn-secondary" onclick="kitOptionSwitch('kit-env', 'kit-env-mbed');">mbed</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-env kit-env-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtAid01</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-env kit-env-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtAid01-mbed</li>
                             <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-env kit-env-basic">85.00</p>
                         <p class="price price-usd kit-env kit-env-mbed hidden">90.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p>Measures temperature, humidity and atmospheric pressure. MtSense01 carries sensors of Bosch Sensortec
                             and Sensirion.
                             <span class="kit-env kit-env-basic">J-Link OB lets you develop with Nordic SDK, e.g. Keil, nRF Studio.</span>
                             <span class="kit-env kit-env-mbed hidden">It contains a ARM® mbed™ compatible extension board MtAid01-mbed.</span>
                         </p>
-                        <h4>Tutorial</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="//blog.mtmtech.com.tw/2017/06/06/mtconnect04s-with-mtsense01-on-arm-mbed/">mbed: Thermometer hygrometer and barometer with MtConnect04S  </a></li>
                         </ul>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail" data-toggle="collapse" data-target="#kit-env-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-env-detail"></button>
                 <div id="kit-env-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -141,9 +140,9 @@
                         <div class="col-md-4">
                             <h3>MtSense01</h3>
                             <strong>Pressure sensor</strong><br> Bosch Sensortec BMP280<br>
-                            <a class="btn badge i18n-goto" href="https://www.bosch-sensortec.com/bst/products/all_products/bmp280">Bosch</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmp280"></a><br>
                             <strong>Humidity & temperature sensor</strong><br> Sensirion SHT25<br>
-                            <a class="btn badge i18n-goto" href="https://www.sensirion.com/en/environmental-sensors/humidity-sensors/humidity-temperature-sensor-sht2x-digital-i2c-accurate/">Sensirion</a><br>
+                            <a data-i18n="kit.goto.sensirion" class="btn badge link-spec-sht25"></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -158,9 +157,9 @@
                         <div class="col-md-4">
                             <h3>MtSense08</h3>
                             <strong>Presure sensor</strong><br> ST LPS25HB<br>
-                            <a class="btn badge i18n-goto link-spec-lps25hb">ST</a><br>
+                            <a data-i18n="kit.goto.st" class="btn badge link-spec-lps25hb"></a><br>
                             <strong>Humidity & temperature sensor</strong><br> ST HTS221<br>
-                            <a class="btn badge i18n-goto link-spec-hts221">ST</a><br>
+                            <a data-i18n="kit.goto.st" class="btn badge link-spec-hts221"></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -177,18 +176,18 @@
                     <h2 class="kit-motion kit-motion-basic">Motion Sensor Kit</h2>
                     <h2 class="kit-motion kit-motion-mbed hidden">Motion Sensor Kit for mbed</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-motion kit-motion-basic" src="images/kit-motion-basic.jpeg" />
-                        <img class="kit-motion kit-motion-mbed hidden" src="images/kit-motion-mbed.jpeg" />
+                        <img class="kit-motion kit-motion-basic" src="/images/kit-motion-basic.jpeg"/>
+                        <img class="kit-motion kit-motion-mbed hidden" src="/images/kit-motion-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-motion kit-motion-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-motion', 'kit-motion-basic');">basic</button>
                             <button class="btn kit-motion kit-motion-mbed btn-secondary" onclick="kitOptionSwitch('kit-motion', 'kit-motion-mbed');">mbed</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-motion kit-motion-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense03</li>
                             <li>1✕ MtSense07</li>
                             <li>1✕ MtAid01</li>
@@ -196,27 +195,27 @@
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-motion kit-motion-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense03</li>
                             <li>1✕ MtSense07</li>
                             <li>1✕ MtAid01-mbed</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-motion kit-motion-basic">100.00</p>
                         <p class="price price-usd kit-motion kit-motion-mbed hidden">105.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> The accelerometer and gyroscope tell you how your device is oriented in a 3D space and also detect angular
                             movements of your device. Other functions include: pedometer, fall detection and theft detection. Control your device wirelessly
                             via certain kinds of motion.
                             <span class="kit-motion kit-motion-basic">J-Link OB lets you develop with Nordic SDK, e.g. Keil, nRF Studio.</span>
                             <span class="kit-motion kit-motion-mbed hidden">It contains a ARM® mbed™ compatible extension board MtAid01-mbed.</span>
                         </p>
-                        <h4>Tutorial</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="//blog.mtmtech.com.tw/2016/01/05/program-nrf51822/">How to program the flash of MtConnect04S</a></li>
                             <li><a href="//blog.mtmtech.com.tw/2015/12/10/mtconnect03-motion-sensor-en/">Motion sensors on MtConnect03</a>)</li>
@@ -224,7 +223,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail" data-toggle="collapse" data-target="#kit-motion-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-motion-detail"></button>
                 <div id="kit-motion-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -234,9 +233,9 @@
                         <div class="col-md-4">
                             <h3>MtSense03-BO</h3>
                             <strong>3-axis accelerometer</strong><br> Bosch BMA250E<br>
-                            <a class="btn badge i18n-goto" href="https://www.bosch-sensortec.com/bst/products/all_products/bma250e">Bosch</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bma250e"></a><br>
                             <strong>3-axis gyrometer</strong><br> Bosch BMG160<br>
-                            <a class="btn badge i18n-goto" href="https://www.bosch-sensortec.com/bst/products/all_products/bmg160">Bosch</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmg160"></a><br>
                         </div>
                         <div class="col-md-3">
                             <img src="/images/kit-size-pin.002.png" alt="mtsense03-bo">
@@ -249,11 +248,11 @@
                         <div class="col-md-4">
                             <h3>MtSense07</h3>
                             <strong>Magnetic sensor</strong><br> AKM AK09970<br>
-                            <span class="btn badge i18n-goto link-spec-ak09970">AKM</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak09970"></a><br>
                             <strong>Electronic compass</strong><br> AKM AK09912<br>
-                            <span class="btn badge i18n-goto link-spec-ak09912">AKM</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak09912"></a><br>
                             <strong>IR Sensor</strong><br> AKM AK9750<br>
-                            <span class="btn badge i18n-goto link-spec-ak9750">AKM</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak9750"></a><br>
                         </div>
                         <div class="col-md-3">
                             <img src="/images/kit-size-pin.003.png" alt="mtsense07">
@@ -267,7 +266,7 @@
                         <div class="col-md-4">
                             <h3>MtSense04-Pi</h3>
                             <strong>Gesture recognition sensor</strong><br> Pixart PAJ7620U2<br>
-                            <a class="btn badge i18n-goto link-spec-paj7620u2">Pixart</a><br>
+                            <a class="btn badge link-spec-paj7620u2"><span data-i18n="kit.goto.pixart" /></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -284,48 +283,48 @@
                     <h2 class="kit-health kit-health-basic">Health Sensor Kit</h2>
                     <h2 class="kit-health kit-health-mbed hidden">Health Sensor Kit for mbed</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-health kit-health-basic" src="images/kit-health-basic.jpeg" />
-                        <img class="kit-health kit-health-mbed hidden" src="images/kit-health-mbed.jpeg" />
+                        <img class="kit-health kit-health-basic" src="/images/kit-health-basic.jpeg"/>
+                        <img class="kit-health kit-health-mbed hidden" src="/images/kit-health-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-health kit-health-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-health', 'kit-health-basic');">basic</button>
                             <button class="btn kit-health kit-health-mbed btn-secondary" onclick="kitOptionSwitch('kit-health', 'kit-health-mbed');">mbed</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-health kit-health-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense06</li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-health kit-health-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense06</li>
                             <li>1✕ MtAid01-mbed</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-health kit-health-basic">90.00</p>
                         <p class="price price-usd kit-health kit-health-mbed hidden">95.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p>It monitors the pulse and oxygen saturation level (SpO<sub>2</sub>), relays the important information
                             about the status of the body, and helps to take timely actions for your health.
                             <span class="kit-health kit-health-basic">J-Link OB lets you develop with Nordic SDK, e.g. Keil, nRF Studio.</span>
                             <span class="kit-health kit-health-mbed hidden">It contains a ARM® mbed™ compatible extension board MtAid01-mbed.</span>
                         </p>
                         <a href="//itunes.apple.com/app/mtm-mtconnect04-pulse-oximeter/id1108365433"><img src="//devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"></a>
-                        <h4>Tutorial</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="//blog.mtmtech.com.tw/2016/06/28/pulse-oximeter-with-mtconnect04/">Pulse oximeter with MtConnect04</a></li>
                         </ul>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail" data-toggle="collapse" data-target="#kit-health-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-health-detail"></button>
                 <div id="kit-health-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -350,37 +349,37 @@
                     <h2 class="kit-uv kit-uv-basic">UV Sensor Kit</h2>
                     <h2 class="kit-uv kit-uv-mbed hidden">UV Sensor Kit for mbed</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-uv kit-uv-basic" src="images/kit-uv-basic.jpeg" />
-                        <img class="kit-uv kit-uv-mbed hidden" src="images/kit-uv-mbed.jpeg" />
+                        <img class="kit-uv kit-uv-basic" src="/images/kit-uv-basic.jpeg"/>
+                        <img class="kit-uv kit-uv-mbed hidden" src="/images/kit-uv-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-uv kit-uv-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-uv', 'kit-uv-basic');">basic</button>
                             <button class="btn kit-uv kit-uv-mbed btn-secondary" onclick="kitOptionSwitch('kit-uv', 'kit-uv-mbed');">mbed</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-uv kit-uv-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ MtAid02 (Coin battery socket)</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-uv kit-uv-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01-mbed</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-uv kit-uv-basic">80.00</p>
                         <p class="price price-usd kit-uv kit-uv-mbed hidden">85.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p>Measures light in the UVA/UVB spectrums. Provides an accurate measurement of the UVI and monitors UV lamp
                             degradation.
                             <span class="kit-uv kit-uv-basic">J-Link OB lets you develop with Nordic SDK, e.g. Keil, nRF Studio.</span>
@@ -388,7 +387,7 @@
                         </p>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail" data-toggle="collapse" data-target="#kit-uv-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-uv-detail"></button>
                 <div id="kit-uv-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -413,33 +412,33 @@
                     <h2 class="kit-mtc04s kit-mtc04s-basic">MtConnect04S Kit</h2>
                     <h2 class="kit-mtc04s kit-mtc04s-mbed hidden">MtConnect04S Kit for mbed</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-mtc04s kit-mtc04s-basic" src="images/kit-mtc04s-basic.jpeg" />
-                        <img class="kit-mtc04s kit-mtc04s-mbed hidden" src="images/kit-mtc04s-mbed.jpeg" />
+                        <img class="kit-mtc04s kit-mtc04s-basic" src="/images/kit-mtc04s-basic.jpeg"/>
+                        <img class="kit-mtc04s kit-mtc04s-mbed hidden" src="/images/kit-mtc04s-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-mtc04s kit-mtc04s-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-basic');">basic</button>
                             <button class="btn kit-mtc04s kit-mtc04s-mbed btn-secondary" onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-mbed');">mbed</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc04s kit-mtc04s-basic">
-                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-mtc04s kit-mtc04s-mbed hidden">
-                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s">spec</sup></li>
+                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01-mbed</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-mtc04s kit-mtc04s-basic">90.00</p>
                         <p class="price price-usd kit-mtc04s kit-mtc04s-mbed hidden">95.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> The MtConnect04S provides the most convenient way for developing Bluetooth low energy(BLE) applications.
                             It carries the ultra small BLE SiP module, MtM+ M904S. It have generic IO that let you build up your
                             own IoT applications rapidly.
@@ -456,23 +455,23 @@
                 <div class="row">
                     <h2 class="kit-mtc02 kit-mtc02-basic">MtConnect02 Kit</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-mtc02 kit-mtc02-basic" src="images/kit-mtc02-basic.jpeg" />
+                        <img class="kit-mtc02 kit-mtc02-basic" src="/images/kit-mtc02-basic.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-mtc02 kit-mtc02-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-basic');">basic</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc02 kit-mtc02-basic">
-                            <li>3✕ MtConnect02 <sup class="link-mtconnect02">spec</sup></li>
+                            <li>3✕ MtConnect02 <sup class="link-mtconnect02"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ CSR USB &lt;&gt; SPI</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-mtc02 kit-mtc02-basic">90.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
                     </div>
@@ -485,23 +484,23 @@
                 <div class="row">
                     <h2 class="kit-beacon kit-beacon-basic">Beacon Kit</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-beacon kit-beacon-basic" src="images/kit-beacon-basic.jpeg" />
+                        <img class="kit-beacon kit-beacon-basic" src="/images/kit-beacon-basic.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-beacon kit-beacon-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-beacon', 'kit-beacon-basic');">basic</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-beacon kit-beacon-basic">
-                            <li>3✕ MtConnect02 <sup class="link-mtconnect02">spec</sup></li>
+                            <li>3✕ MtConnect02 <sup class="link-mtconnect02"><span data-i18n="kit.spec"/></sup></li>
                             <li>3✕ MtAid02 (Coin battery socket)</li>
                             <li>Pre-loaded beacon firmware</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-beacon kit-beacon-basic">100.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
                     </div>
@@ -514,33 +513,33 @@
                 <div class="row">
                     <h2 class="kit-mtc05 kit-mtc05-basic">MtConnect05 Kit</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-mtc05 kit-mtc05-basic" src="images/kit-mtc05-basic.png" />
+                        <img class="kit-mtc05 kit-mtc05-basic" src="/images/kit-mtc05-basic.png" />
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-mtc05 kit-mtc05-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc05', 'kit-mtc05-basic');">basic</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc05 kit-mtc05-basic">
-                            <li>3✕ MtConnect05 <sup class="link-mtconnect05">spec</sup></li> 
+                            <li>3✕ MtConnect05 <sup class="link-mtconnect05"><span data-i18n="kit.spec"/></sup></li> 
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <!-- <p class="price price-usd kit-mtc05 kit-mtc05-basic">90.00</p> -->
                         <p class="price price-usd kit-mtc05 kit-mtc05-basic">90.00</p>
-                        <p class="xs">Before tax and shipping charges</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> The MtConnect05 provides the most convenient way for developing Bluetooth low energy(BLE) applications.
                             It carries the ultra small BLE SiP module, MtM+ M905. It have generic IO that let you build up your
                             own IoT applications rapidly.
                             <span class="kit-mtc05 kit-mtc05-basic">J-Link OB lets you develop with Nordic SDK, e.g. Keil, nRF Studio.</span>
                         </p>
-                        <h4>Tutorial</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="http://wp.me/p6Z0aT-1br">Getting started with MtConnect05 on Nordic SDK</a></li>
                         </ul>
@@ -554,37 +553,37 @@
                 <div class="row">
                     <h2 class="kit-lora kit-lora-basic">LoRa Kit</h2>
                     <div class="col-md-6 col-lg-5 kit-image">
-                        <img class="kit-lora kit-lora-basic" src="images/kit-lora-basic.png" />
+                        <img class="kit-lora kit-lora-basic" src="/images/kit-lora-basic.png" />
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>Option</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-lora kit-lora-basic btn-secondary btn-primary" onclick="kitOptionSwitch('kit-lora', 'kit-lora-basic');">basic</button>
                         </div>
-                        <h4>Includes</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-lora kit-lora-basic">
-                            <li>1✕ MtConnect08 <!--sup class="link-mtconnect08">spec</sup--></li>
+                            <li>1✕ MtConnect08 <!--sup class="link-mtconnect08"><span data-i18n="kit.spec"/></sup--></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ Switched Battery Box 2x AAA</li>
                             <li>1✕ RF antenna</li>
                         </ul>
-                        <h4>Price</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-lora kit-lora-basic">130.00</p>
-                        <p class="xs i18n-more-extra-tax-and-shipping-fee"></p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>Description</h4>
-                        <p> The new MtConnect08 Kit is based on the MtM+ M908 SiP module to address the needs of IoT applications. With demand for more
-                            lower power consumption and longer distance usage, the wireless manufacturers are facing challenges
-                            to overcome existing limitations. The LoRa Technology offers a very compelling mix of long range,
-                            low power consumption and secure data transmission.
+                        <h4 data-i18n="kit.description"></h4>
+                        <p> The new MtConnect08 Kit is based on the MtM+ M908 SiP module to address the needs of IoT applications.
+                            With demand for more lower power consumption and longer distance usage, the wireless manufacturers
+                            are facing challenges to overcome existing limitations. The LoRa Technology offers a very compelling
+                            mix of long range, low power consumption and secure data transmission.
                         </p>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail" data-toggle="collapse" data-target="#kit-lora-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-lora-detail"></button>
                 <div id="kit-lora-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -594,9 +593,9 @@
                         <div class="col-md-4">
                             <h3>MtSense01</h3>
                             <strong>Pressure sensor</strong><br> Bosch Sensortec BMP280<br>
-                            <a class="btn badge i18n-goto" href="https://www.bosch-sensortec.com/bst/products/all_products/bmp280">Bosch</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmp280"></a><br>
                             <strong>Humidity & temperature sensor</strong><br> Sensirion SHT25<br>
-                            <a class="btn badge i18n-goto" href="https://www.sensirion.com/en/environmental-sensors/humidity-sensors/humidity-temperature-sensor-sht2x-digital-i2c-accurate/">Sensirion</a><br>
+                            <a data-i18n="kit.goto.sensirion" class="btn badge link-spec-sht25"></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -613,6 +612,7 @@
                             <img src="/images/kit-size-pin.005.png" alt="mtsense05">
                         </div>
                     </div>
+                </div>
             </div>
         </section>
     </div>
@@ -637,15 +637,22 @@
     <!-- Plugin JavaScript -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.1.4/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/pixelcog/parallax.min.js"></script>
-    
-    <script src="js/mtm-link.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendor/pixelcog/parallax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/8.4.3/i18next.min.js"></script>
+    <script src="/vendor/i18next-xhr-backend/1.4.2/i18nextXHRBackend.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
+
+    <script src="/js/mtm-link.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="/js/creative.min.js"></script>
 
     <script>
+        i18next.use(i18nextXHRBackend).init({ lng: document.documentElement.lang }, function(t) {
+            jqueryI18next.init(i18next, $);
+            $("[data-i18n]").localize();
+        });
 
 	    $(document).on("scroll",function(){
 		    if($(document).scrollTop()>50){
@@ -681,7 +688,6 @@
         }
 
         var url = document.location.toString();
-        var activeTab = url.substring(url.indexOf("#") + 1);
         if (url.match('#')) {
             $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
         }

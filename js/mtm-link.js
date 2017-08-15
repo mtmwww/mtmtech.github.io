@@ -1,4 +1,3 @@
-
 $('.link-mtconnect05').each(function () {
     var link = $(this).html();
     $(this).contents().wrap('<a href="//blog.mtmtech.com.tw/mtconnect05"></a>');
@@ -46,4 +45,20 @@ $('.link-spec-hts221').each(function () {
 $('.link-spec-paj7620u2').each(function () {
     var link = $(this).html();
     $(this).wrap('<a href="//www.pixart.com/product_data.asp?product_id=151&productclassify_id=17&productclassify2_id=43&productclassify_name=Gesture%20Recognition&productclassify2_name=Integrated%20ISP%20Single-Chip&partnumber=PAJ7620U2"></a>');
+});
+$('.link-spec-bmg160').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.bosch-sensortec.com/bst/products/all_products/bmg160"></a>');
+});
+$('.link-spec-bmp280').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.bosch-sensortec.com/bst/products/all_products/bmp280"></a>');
+});
+$('.link-spec-bma250e').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.bosch-sensortec.com/bst/products/all_products/bma250e"></a>');
+});
+$('.link-spec-sht25').each(function () {
+    var link = $(this).html();
+    $(this).wrap('<a href="//www.sensirion.com/en/environmental-sensors/humidity-sensors/humidity-temperature-sensor-sht2x-digital-i2c-accurate/"</a>');
 });

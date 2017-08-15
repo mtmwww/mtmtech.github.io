@@ -27,7 +27,6 @@
     <!-- Theme CSS -->
     <link href="/css/creative.css" rel="stylesheet">
     <link href="/css/parallax.css" rel="stylesheet">
-    <link href="/css/i18n.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -91,44 +90,44 @@
                         <img class="kit-env kit-env-mbed hidden" src="/images/kit-env-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-env kit-env-basic btn-primary " onclick="kitOptionSwitch('kit-env', 'kit-env-basic');">basic</button>
-                            <button class="btn kit-env kit-env-mbed" onclick="kitOptionSwitch('kit-env', 'kit-env-mbed');">mbed</button>
+                            <button class="btn kit-env kit-env-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-env', 'kit-env-basic');">basic</button>
+                            <button class="btn kit-env kit-env-mbed btn-secondary" onclick="kitOptionSwitch('kit-env', 'kit-env-mbed');">mbed</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-env kit-env-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtAid01</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-env kit-env-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtAid01-mbed</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-env kit-env-basic">85.00</p>
                         <p class="price price-usd kit-env kit-env-mbed hidden">90.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p>量測空氣溫度、溼度和大氣壓力。MtSense01 搭載博世 Bosch Sensortec 及 Sensirion 感應晶片。
                             <span class="kit-env kit-env-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                             <span class="kit-env kit-env-mbed hidden">MtAid01-mbed 支援 ARM® mbed™ 平台。</span>
                         </p>
-                        <h4>教學</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="//blog.mtmtech.com.tw/2017/06/06/mtconnect04s-with-mtsense01-on-arm-mbed/">mbed: Thermometer hygrometer and barometer with MtConnect04S  </a></li>
                         </ul>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail-zh" data-toggle="collapse" data-target="#kit-env-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-env-detail"></button>
                 <div id="kit-env-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -138,9 +137,9 @@
                         <div class="col-md-4">
                             <h3>MtSense01</h3>
                             <strong>大氣壓力感測</strong><br> 博世 Bosch Sensortec BMP280<br>
-                            <a class="btn badge i18n-goto-zh" href="https://www.bosch-sensortec.com/bst/products/all_products/bmp280">博世</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmp280"></a><br>
                             <strong>溫溼度感測</strong><br> Sensirion SHT25<br>
-                            <a class="btn badge i18n-goto-zh" href="https://www.sensirion.com/en/environmental-sensors/humidity-sensors/humidity-temperature-sensor-sht2x-digital-i2c-accurate/">Sensirion</a><br>
+                            <a data-i18n="kit.goto.sensirion" class="btn badge link-spec-sht25"></a><br>
                         </div>
                         <div class="col-md-3">
                             <img src="/images/kit-size-pin.001.png" alt="mtsense01">
@@ -154,9 +153,9 @@
                         <div class="col-md-4">
                             <h3>MtSense08</h3>
                             <strong>大氣壓力感測</strong><br> 意法半導體 ST LPS25HB<br>
-                            <a class="btn badge i18n-goto-zh link-spec-lps25hb">意法半導體</a><br>
+                            <a class="btn badge link-spec-lps25hb"><span><span data-i18n="kit.goto" /></span> 意法半導體</a><br>
                             <strong>溫溼度感測</strong><br> 意法半導體 ST HTS221<br>
-                            <a class="btn badge i18n-goto-zh link-spec-hts221">意法半導體</a><br>
+                            <a class="btn badge link-spec-hts221"><span><span data-i18n="kit.goto" /></span> 意法半導體</a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -177,42 +176,42 @@
                         <img class="kit-motion kit-motion-mbed hidden" src="/images/kit-motion-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-motion kit-motion-basic btn-primary " onclick="kitOptionSwitch('kit-motion', 'kit-motion-basic');">basic</button>
-                            <button class="btn kit-motion kit-motion-mbed" onclick="kitOptionSwitch('kit-motion', 'kit-motion-mbed');">mbed</button>
+                            <button class="btn kit-motion kit-motion-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-motion', 'kit-motion-basic');">basic</button>
+                            <button class="btn kit-motion kit-motion-mbed btn-secondary" onclick="kitOptionSwitch('kit-motion', 'kit-motion-mbed');">mbed</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-motion kit-motion-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense03</li>
                             <li>1✕ MtSense07</li>
                             <li>1✕ MtAid01</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-motion kit-motion-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense03</li>
                             <li>1✕ MtSense07</li>
                             <li>1✕ MtAid01-mbed</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-motion kit-motion-basic">100.00</p>
                         <p class="price price-usd kit-motion kit-motion-mbed hidden">105.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> MEMS加速度計和陀螺儀可以量測三軸運動、轉動角速度等。可用於計步器，墜落、跌倒感應。
                             <span class="kit-motion kit-motion-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                             <span class="kit-motion kit-motion-mbed hidden">MtAid01-mbed 支援 ARM® mbed™ 平台。</span>
                         </p>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail-zh" data-toggle="collapse" data-target="#kit-motion-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-motion-detail"></button>
                 <div id="kit-motion-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -222,9 +221,9 @@
                         <div class="col-md-4">
                             <h3>MtSense03-BO</h3>
                             <strong>三軸電子加速度儀</strong><br> 博世 Bosch BMA250E<br>
-                            <a class="btn badge i18n-goto-zh" href="https://www.bosch-sensortec.com/bst/products/all_products/bma250e">博世</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bma250e"></a><br>
                             <strong>三軸電子陀螺儀</strong><br> 博世 Bosch BMG160<br>
-                            <a class="btn badge i18n-goto-zh" href="https://www.bosch-sensortec.com/bst/products/all_products/bmg160">博世</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmg160"></a><br>
                         </div>
                         <div class="col-md-3">
                             <img src="/images/kit-size-pin.002.png" alt="mtsense03-bo">
@@ -237,11 +236,11 @@
                         <div class="col-md-4">
                             <h3>MtSense07</h3>
                             <strong>磁力計</strong><br>旭化成 AKM AK09970<br>
-                            <span class="btn badge i18n-goto-zh link-spec-ak09970">旭化成</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak09970"></a><br>
                             <strong>電子羅盤</strong><br>旭化成 AKM AK09912<br>
-                            <span class="btn badge i18n-goto-zh link-spec-ak09912">旭化成</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak09912"></a><br>
                             <strong>紅外線感測</strong><br>旭化成 AKM AK9750<br>
-                            <span class="btn badge i18n-goto-zh link-spec-ak9750">旭化成</span><br>
+                            <a data-i18n="kit.goto.akm" class="btn badge link-spec-ak9750"></a><br>
                         </div>
                         <div class="col-md-3">
                             <img src="/images/kit-size-pin.003.png" alt="mtsense07">
@@ -255,7 +254,7 @@
                         <div class="col-md-4">
                             <h3>MtSense04-Pi</h3>
                             <strong>手勢辨識</strong><br> 原相 Pixart PAJ7620U2<br>
-                            <a class="btn badge i18n-goto-zh link-spec-paj7620u2">原相</a><br>
+                            <a class="btn badge link-spec-paj7620u2"><span data-i18n="kit.goto.pixart" /></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -276,43 +275,43 @@
                         <img class="kit-health kit-health-mbed hidden" src="/images/kit-health-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-health kit-health-basic btn-primary " onclick="kitOptionSwitch('kit-health', 'kit-health-basic');">basic</button>
-                            <button class="btn kit-health kit-health-mbed" onclick="kitOptionSwitch('kit-health', 'kit-health-mbed');">mbed</button>
+                            <button class="btn kit-health kit-health-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-health', 'kit-health-basic');">basic</button>
+                            <button class="btn kit-health kit-health-mbed btn-secondary" onclick="kitOptionSwitch('kit-health', 'kit-health-mbed');">mbed</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-health kit-health-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense06</li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-health kit-health-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense06</li>
                             <li>1✕ MtAid01-mbed</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-health kit-health-basic">90.00</p>
                         <p class="price price-usd kit-health kit-health-mbed hidden">95.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
-                    <div class="col-lg-3 col-md-10 kit-descriptio">
-                        <h4>概覽</h4>
+                    <div class="col-lg-3 col-md-10 kit-description">
+                        <h4 data-i18n="kit.description"></h4>
                         <p>Health Sensor Kit 包含 MtSense06，搭載臺醫光電感應器，透過反射式光學量測脈博及血氧飽和度 (SpO<sub>2</sub>)，提供生命徵象管理數據。
                             <span class="kit-health kit-health-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                             <span class="kit-health kit-health-mbed hidden">MtAid01-mbed 支援 ARM® mbed™ 平台。</span>
                         </p>
                         <a href="//itunes.apple.com/app/mtm-mtconnect04-pulse-oximeter/id1108365433"><img src="//devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store-zh-tw.svg"></a>
-                        <h4>教學</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="//blog.mtmtech.com.tw/2016/06/28/pulse-oximeter-with-mtconnect04/">Pulse oximeter with MtConnect04</a></li>
                         </ul>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail-zh" data-toggle="collapse" data-target="#kit-health-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-health-detail"></button>
                 <div id="kit-health-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -341,40 +340,40 @@
                         <img class="kit-uv kit-uv-mbed hidden" src="/images/kit-uv-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-uv kit-uv-basic btn-primary " onclick="kitOptionSwitch('kit-uv', 'kit-uv-basic');">basic</button>
-                            <button class="btn kit-uv kit-uv-mbed" onclick="kitOptionSwitch('kit-uv', 'kit-uv-mbed');">mbed</button>
+                            <button class="btn kit-uv kit-uv-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-uv', 'kit-uv-basic');">basic</button>
+                            <button class="btn kit-uv kit-uv-mbed btn-secondary" onclick="kitOptionSwitch('kit-uv', 'kit-uv-mbed');">mbed</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-uv kit-uv-basic">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-uv kit-uv-mbed hidden">
-                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>1✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01-mbed</li>
-                            <li>1✕ MtAid02 (Coin battary socket)</li>
+                            <li>1✕ MtAid02 (Coin battery socket)</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-uv kit-uv-basic">80.00</p>
                         <p class="price price-usd kit-uv kit-uv-mbed hidden">85.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p>UV Sensor Kit 可以量測光線中的紫外線 UVA 及 UVB。
                             <span class="kit-uv kit-uv-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                             <span class="kit-uv kit-uv-mbed hidden">MtAid01-mbed 支援 ARM® mbed™ 平台。</span>
                         </p>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail-zh" data-toggle="collapse" data-target="#kit-uv-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-uv-detail"></button>
                 <div id="kit-uv-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -403,29 +402,29 @@
                         <img class="kit-mtc04s kit-mtc04s-mbed hidden" src="/images/kit-mtc04s-mbed.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-mtc04s kit-mtc04s-basic btn-primary " onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-basic');">basic</button>
-                            <button class="btn kit-mtc04s kit-mtc04s-mbed" onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-mbed');">mbed</button>
+                            <button class="btn kit-mtc04s kit-mtc04s-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-basic');">basic</button>
+                            <button class="btn kit-mtc04s kit-mtc04s-mbed btn-secondary" onclick="kitOptionSwitch('kit-mtc04s', 'kit-mtc04s-mbed');">mbed</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc04s kit-mtc04s-basic">
-                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
                         <ul class="kit-mtc04s kit-mtc04s-mbed hidden">
-                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s">技術規格</sup></li>
+                            <li>3✕ MtConnect04S <sup class="link-mtconnect04s"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01-mbed</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-mtc04s kit-mtc04s-basic">90.00</p>
                         <p class="price price-usd kit-mtc04s kit-mtc04s-mbed hidden">95.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> MtConnect04S 搭載 MtM+ M904S，系統級封裝低功耗藍牙晶片，12組 GPIO 同時可以做為 UART、AIO、I²C 界面使用。支援開源的開發環境，及各種標準介面 MEMS 感應器。
                             <span class="kit-mtc04s kit-mtc04s-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                             <span class="kit-mtc04s kit-mtc04s-mbed hidden">MtAid01-mbed 支援 ARM® mbed™ 平台。</span>
@@ -443,23 +442,23 @@
                         <img class="kit-mtc02 kit-mtc02-basic" src="/images/kit-mtc02-basic.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-mtc02 kit-mtc02-basic btn-primary " onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-basic');">basic</button>
+                            <button class="btn kit-mtc02 kit-mtc02-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc02', 'kit-mtc02-basic');">basic</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc02 kit-mtc02-basic">
-                            <li>3✕ MtConnect02 <sup class="link-mtconnect02">技術規格</sup></li>
+                            <li>3✕ MtConnect02 <sup class="link-mtconnect02"><span data-i18n="kit.spec"/></sup></li>
                             <li>1✕ MtAid01</li>
-                            <li>1✕ CSR USB<>SPI</li>
+                            <li>1✕ CSR USB &lt;&gt; SPI</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-mtc02 kit-mtc02-basic">90.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> MtConnect02 搭載 MtM+ M903，系統級封裝低功耗藍牙晶片，支援 mesh 網路，智慧燈泡。</p>
                     </div>
                 </div>
@@ -474,20 +473,20 @@
                         <img class="kit-beacon kit-beacon-basic" src="/images/kit-beacon-basic.jpeg"/>
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
-                            <button class="btn kit-beacon kit-beacon-basic btn-primary " onclick="kitOptionSwitch('kit-beacon', 'kit-beacon-basic');">basic</button>
+                            <button class="btn kit-beacon kit-beacon-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-beacon', 'kit-beacon-basic');">basic</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-beacon kit-beacon-basic">
-                            <li>3✕ MtConnect02 <sup class="link-mtconnect02">技術規格</sup></li>
-                            <li>3✕ MtAid02 (Coin battary socket)</li>
+                            <li>3✕ MtConnect02 <sup class="link-mtconnect02"><span data-i18n="kit.spec"/></sup></li>
+                            <li>3✕ MtAid02 (Coin battery socket)</li>
                             <li>預載 beacon 韌體</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-beacon kit-beacon-basic">100.00</p>
-                        <p class="xs">稅金及運費另計</p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
                     </div>
@@ -503,28 +502,28 @@
                         <img class="kit-mtc05 kit-mtc05-basic" src="/images/kit-mtc05-basic.png" />
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-mtc05 kit-mtc05-basic btn-secondary btn-primary " onclick="kitOptionSwitch('kit-mtc05', 'kit-mtc05-basic');">basic</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-mtc05 kit-mtc05-basic">
-                            <li>3✕ MtConnect05 <sup class="link-mtconnect05">技術規格</sup></li> 
+                            <li>3✕ MtConnect05 <sup class="link-mtconnect05"><span data-i18n="kit.spec"/></sup></li> 
                             <li>1✕ MtAid01</li>
                             <li>1✕ J-link OB programmer</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <!-- <p class="price price-usd kit-mtc05 kit-mtc05-basic">90.00</p> -->
                         <p class="price price-usd kit-mtc05 kit-mtc05-basic">90.00</p>
-                        <p class="xs i18n-more-extra-tax-and-shipping-fee-zh"></p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> MtConnect05 搭載 MtM+ M905，系統級封裝低功耗藍牙晶片，GPIO 同時可以做為 UART、AIO、I²C 界面使用。支援開源的開發環境，及各種標準介面 MEMS 感應器。
-                            <span class="kit-mtc04s kit-mtc05-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
+                            <span class="kit-mtc05 kit-mtc05-basic">選擇 Nordic SDK 開發工具時，例如 Keil、nRF Studio，用 J-Link OB 作為寫入韌體的介面。</span>
                         </p>
-                        <h4>教學</h4>
+                        <h4 data-i18n="kit.tutorial"></h4>
                         <ul>
                             <li><a href="http://wp.me/p6Z0aT-1br">Getting started with MtConnect05 on Nordic SDK</a></li>
                         </ul>
@@ -532,6 +531,7 @@
                 </div>
             </div>
         </section>
+
         <section id="kit-lora" class="tab-pane fade">
             <div class="container">
                 <div class="row">
@@ -540,28 +540,26 @@
                         <img class="kit-lora kit-lora-basic" src="/images/kit-lora-basic.png" />
                     </div>
                     <div class="col-md-6 col-lg-3 kit-detail">
-                        <h4>選擇</h4>
+                        <h4 data-i18n="kit.options"></h4>
                         <div class="btn-group" role="group">
                             <button class="btn kit-lora kit-lora-basic btn-secondary btn-primary" onclick="kitOptionSwitch('kit-lora', 'kit-lora-basic');">basic</button>
                         </div>
-                        <h4>內含</h4>
+                        <h4 data-i18n="kit.includes"></h4>
                         <ul class="kit-lora kit-lora-basic">
-                            <li>1✕ MtConnect08
-                                <!--sup class="link-mtconnect08">spec</sup-->
-                            </li>
+                            <li>1✕ MtConnect08 <!--sup class="link-mtconnect08"><span data-i18n="kit.spec"/></sup--></li>
                             <li>1✕ MtSense01</li>
                             <li>1✕ MtSense05</li>
                             <li>1✕ MtAid01</li>
                             <li>1✕ Switched Battery Box 2x AAA</li>
                             <li>1✕ RF antenna</li>
                         </ul>
-                        <h4>價格</h4>
+                        <h4 data-i18n="kit.price"></h4>
                         <p class="price price-usd kit-lora kit-lora-basic">130.00</p>
-                        <p class="xs i18n-more-extra-tax-and-shipping-fee-zh"></p>
-                        <a href="#request" class="btn btn-xl btn-primary page-scroll i18n-fill-request-form-zh"></a>
+                        <p data-i18n="kit.before-tax" class="xs"></p>
+                        <a data-i18n="kit.fill-form" class="btn btn-xl btn-primary page-scroll" href="#request"></a>
                     </div>
                     <div class="col-lg-3 col-md-10 kit-description">
-                        <h4>概覽</h4>
+                        <h4 data-i18n="kit.description"></h4>
                         <p> The new MtConnect08 Kit is based on the MtM+ M908 SiP module to address the needs of IoT applications.
                             With demand for more lower power consumption and longer distance usage, the wireless manufacturers
                             are facing challenges to overcome existing limitations. The LoRa Technology offers a very compelling
@@ -569,7 +567,7 @@
                         </p>
                     </div>
                 </div>
-                <button class="btn i18n-more-detail-zh" data-toggle="collapse" data-target="#kit-lora-detail"><span class="caret"></button>
+                <button data-i18n="kit.more-detail" class="btn" data-toggle="collapse" data-target="#kit-lora-detail"></button>
                 <div id="kit-lora-detail" class="collapse">
                     <hr class="max">
                     <div class="row">
@@ -579,9 +577,9 @@
                         <div class="col-md-4">
                             <h3>MtSense01</h3>
                             <strong>Pressure sensor</strong><br> Bosch Sensortec BMP280<br>
-                            <a class="btn badge i18n-goto" href="https://www.bosch-sensortec.com/bst/products/all_products/bmp280">Bosch</a><br>
+                            <a data-i18n="kit.goto.bosch" class="btn badge link-spec-bmp280"></a><br>
                             <strong>Humidity & temperature sensor</strong><br> Sensirion SHT25<br>
-                            <a class="btn badge i18n-goto" href="https://www.sensirion.com/en/environmental-sensors/humidity-sensors/humidity-temperature-sensor-sht2x-digital-i2c-accurate/">Sensirion</a><br>
+                            <a data-i18n="kit.goto.sensirion" class="btn badge link-spec-sht25"></a><br>
 
                         </div>
                         <div class="col-md-3">
@@ -599,6 +597,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 
@@ -624,13 +623,20 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.1.4/scrollreveal.min.js"></script>
     <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="/vendor/pixelcog/parallax.min.js"></script>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/i18next/8.4.3/i18next.min.js"></script>
+    <script src="/vendor/i18next-xhr-backend/1.4.2/i18nextXHRBackend.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
+
     <script src="/js/mtm-link.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="/js/creative.min.js"></script>
 
     <script>
+        i18next.use(i18nextXHRBackend).init({ lng: document.documentElement.lang }, function(t) {
+            jqueryI18next.init(i18next, $);
+            $("[data-i18n]").localize();
+        });
 
 	    $(document).on("scroll",function(){
 		    if($(document).scrollTop()>50){

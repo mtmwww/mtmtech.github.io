@@ -1,0 +1,20 @@
+{
+  "kit": {
+    "options": "Options",
+    "includes": "Includes",
+    "spec": "spec",
+    "goto": {
+      "bosch": "Go to Bosch",
+      "sensirion": "Go to Sensirion",
+      "akm": "Go to AKM",
+      "pixart": "Go to Pixart",
+      "st": "Go to ST"
+    },
+    "price": "Price",
+    "before-tax": "Before tax and shipping charges",
+    "fill-form": "Fill out the request form",
+    "description": "Description",
+    "tutorial": "Tutorial",
+    "more-detail": "More Details ▾"
+  }
+}

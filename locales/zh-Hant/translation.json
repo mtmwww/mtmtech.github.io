@@ -1,0 +1,20 @@
+{
+  "kit": {
+    "options": "選項",
+    "includes": "內含",
+    "spec": "技術規格",
+    "goto": {
+      "bosch": "前往 Bosch",
+      "sensirion": "前往 Sensirion",
+      "akm": "前往 AKM",
+      "pixart": "前往 Pixart",
+      "st": "前往 ST"
+    },
+    "price": "價格",
+    "before-tax": "稅金及運費另計",
+    "fill-form": "填寫需求單",
+    "description": "概覽",
+    "tutorial": "教學",
+    "more-detail": "細節規格 ▾"
+  }
+}
