@@ -18,8 +18,8 @@
          */
         var path = window.location.pathname.toLowerCase();
         var locale = null;
-        ["/zh-tw/", "/"].forEach(function (tag, index, array) {      
-            if(path.startsWith(tag)) {
+        ["/zh-tw/", "/"].forEach(function (tag, index, array) {
+            if (path.startsWith(tag)) {
                 path = path.substring(tag.length);
                 locale = tag;
             }
@@ -66,7 +66,7 @@
             case "kit/":
                 redirect = "kit.html";
                 break;
-        
+
             default:
                 break;
         }
@@ -74,36 +74,39 @@
             window.location.href = "//" + window.location.host + locale + redirect;
         }
     </script>
+    <style>
+        body {
+            background: url('/images/404-milky-way.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: wheat;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NN3H4L"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NN3H4L');</script>
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NN3H4L');</script>
     <!-- End Google Tag Manager -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-6 col-sm-offset-2">
                 <div class="error-template">
-                    <h1>
-                        Oops!</h1>
-                    <h2>
-                        404 Not Found</h2>
-                    <div class="error-details">
-                        Sorry, an error has occured, Requested page not found!
-                    </div>
-                    <div class="error-actions">
-                        <a href="/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                        Take Me Home </a>
-                    </div>
-                </div>
+                    <h1>Oops!</h1>
+                    <h2>404 Not Found</h2>
+                    <p>Sorry, an error has occured, Requested page not found!</p>
+                    <a href="/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span> Take Me Home</a></div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
