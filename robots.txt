@@ -2,3 +2,5 @@
 
 User-Agent: *
 Disallow: /404.html
+Disallow: /test.py
+Disallow: /.travis.yml
