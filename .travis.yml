@@ -3,3 +3,5 @@ python:
     - 2.7
 script:
     - ./test.py
+notifications:
+    slack: mtmtech:FLDyHdGPcSOkiWkCfdeVq69W
