@@ -67,11 +67,20 @@
                 redirect = "kit.html";
                 break;
 
+            case "blog.html":
+            case "blog":
+                redirect = "//blog.mtmtech.com.tw"
+                break;
+
             default:
                 break;
         }
         if (redirect) {
-            window.location.href = "//" + window.location.host + locale + redirect;
+            if (redirect.startsWith("//") || redirect.startsWith("http")) {
+                window.location.href = redirect;
+            } else {
+                window.location.href = "//" + window.location.host + locale + redirect; 
+            }
         }
     </script>
     <style>

@@ -17,6 +17,7 @@ def print_(cat, msg):
 
 def isIgnored(f):
     keys = [ "404",
+            "nav",
             "footer",
             "footer-contact",
             "googlea293c247521688d1",
@@ -26,15 +27,16 @@ def isIgnored(f):
         if(k + ".html" == f): return True
     return False
 
-def test_lang(f, lang):
+def testLang(f, lang):
     stat = "<html lang=\"" + lang + "\">"
     for line in open(f):
         if(stat == line.strip()): return True
     print_(printCat.FAIL, stat + " is NOT FOUND")
     return False
 
-def test_hreflang(f, lang):
+def testHreflang(f, lang):
     page = os.path.basename(f)
+    if(page == "index.html"): page = ""
     en_stmt = "<link rel=\"alternate\" href=\"/" + page +"\" hreflang=\"en\">"
     zh_stmt = "<link rel=\"alternate\" href=\"/zh-tw/" + page + "\" hreflang=\"zh\">"
     en_found = False
@@ -53,15 +55,15 @@ if __name__ == '__main__':
     for f in glob.glob('*.html'):
         if(isIgnored(f)): continue
         print_(printCat.WARNING, f)
-        result &= test_lang(f, "en")
-        result &= test_hreflang(f, "en")
+        result &= testLang(f, "en")
+        result &= testHreflang(f, "en")
 
     for dirPath, dirNames, fileNames in os.walk("zh-tw"):
         for f in fileNames:
             path = dirPath + "/" + f
             if(isIgnored(f)): continue
             print_(printCat.WARNING, path)
-            result &= test_lang(path, "zh-Hant")
-            result &= test_hreflang(path, "zh")
+            result &= testLang(path, "zh-Hant")
+            result &= testHreflang(path, "zh")
 
     sys.exit(not result)
