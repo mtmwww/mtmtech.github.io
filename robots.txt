@@ -5,3 +5,4 @@ Disallow: /404.html
 Disallow: /test.py
 Disallow: /.travis.yml
 Disallow: /contact.html
+Disallow: /zh-tw/contact.html
