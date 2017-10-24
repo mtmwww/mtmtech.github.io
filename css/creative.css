@@ -218,7 +218,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/head_background_wide_3.jpg');
+  background-image: url('../images/home-header-background.png');
   text-align: center;
   color: white;
 }
