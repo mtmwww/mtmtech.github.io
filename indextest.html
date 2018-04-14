@@ -29,17 +29,20 @@
     <link href="https://www.mtmtech.com.tw/css/parallax.css" rel="stylesheet">
 
     <!-- Scrolling Image CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+    }
+    </style>
 </head>
 
 <body id="page-top">
    
-<style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-</style>
-
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NN3H4L"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -56,53 +59,37 @@
    <header>
 	   <div class="header-content">
 		   <div class="header-content-inner">  
-			<div class="w3-content w3-display-container" style="max-width:800px">  </div> 
-			<a href="#sip-module"><img class="mySlides" src="images/NEW_iotready.png" style="width:100%"></a>
-			<a href="https://www.mtmtech.com.tw/factory.html"><img class="mySlides" src="images/NEW_factory.jpg" style="width:100%"></a>
-  			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    			<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    			<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-		</div>   
-	</div>
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
+  			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ 				<!-- Indicators -->
+    				<ol class="carousel-indicators">
+      				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     				<li data-target="#myCarousel" data-slide-to="1"></li>
+   				</ol>
 
-		function plusDivs(n) {
-  			showDivs(slideIndex += n);
-		}
+  				<!-- Wrapper for slides -->
+  				<div class="carousel-inner" role="listbox">
+      				<div class="item active">
+					<a href="#sip-module"><img src="images/NEW_iotready.png" alt="Chania" width="460" height="345"></a>
+      				</div>
+      				<div class="item">
+					<a href="https://www.mtmtech.com.tw/factory.html"><img src="images/NEW_factory.jpg" alt="Chania" width="460" height="345"></a>
+      				</div>
+    				</div>
 
-		function currentDiv(n) {
-  			showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-  			var i;
-  			var x = document.getElementsByClassName("mySlides");
-  			var dots = document.getElementsByClassName("demo");
-  			if (n > x.length) {slideIndex = 1}    
-  			if (n < 1) {slideIndex = x.length}
-  			for (i = 0; i < x.length; i++) {
-     				x[i].style.display = "none";  
-  			}
-  			for (i = 0; i < dots.length; i++) {
-     				dots[i].className = dots[i].className.replace(" w3-white", "");
-  			}
-  			x[slideIndex-1].style.display = "block";  
-  			dots[slideIndex-1].className += " w3-white";
-			}
-	</script>
+				<!-- Left and right controls -->
+    				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      				<span class="sr-only">Previous</span>
+    				</a>
+    				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      				<span class="sr-only">Next</span>
+    				</a>
+  			</div>
+		</div>
 	<!--<a href="#sip-module" class="btn btn-primary btn-xl page-scroll">Our Products</a> -->
-</div>
-
-
-
-
-        </div>
-</div>
-	</header>
+	</div>
+    </header>
 
     <section class="no-padding" id="sip-module">
         <div class="parallax-window" data-parallax="scroll" data-image-src="images/m101-background.jpg">
