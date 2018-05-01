@@ -264,7 +264,6 @@
     <script src="https://www.mtmtech.com.tw/js/creative.min.js"></script>
     
     <script>
-
 	    $(document).on("scroll",function(){
 		    if($(document).scrollTop()>50){
 			    $("nav:first").addClass("navbar-moved");
@@ -274,13 +273,22 @@
 		    }
 	    });
 
-        $("#mainNav").load("https://www.mtmtech.com.tw/nav_debug.html", function(){
-            $("#zh-button a:first").attr("href", "https://www.mtmtech.com.tw/zh-tw/M905.html");
-        });
+       	$("#mainNav").load("nav_test.html", function(){
+	$("#zh-button a:first").attr("href", "https://www.mtmtech.com.tw/zh-tw/M905.html");
+      	});
         $("#contact").load("https://www.mtmtech.com.tw/footer-contact.html");
         $("#myFooter").load("https://www.mtmtech.com.tw/footer.html");
 
     </script>
+    <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
 
 </body>
 
